@@ -3,7 +3,7 @@ report 50020 "Sales - Invoice ITB"
 
 
     DefaultLayout = RDLC;
-    RDLCLayout = './Layouts/50020 Sales - Invoice ITB.rdlc';//
+    RDLCLayout = './Layouts/50020 Sales - Invoice ITB.rdlc';
 
     CaptionML = DAN = 'Salg - faktura',
                 ENU = 'Sales - Invoice';
