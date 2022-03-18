@@ -843,7 +843,10 @@ report 50020 "Sales - Invoice ITB"
                         { }
                         column(VariantCode; "Variant Code")
                         { }
-                        column(CrossRefNo_SalesInvLine; "Cross-Reference No.")
+                        //column(CrossRefNo_SalesInvLine; "Cross-Reference No.")
+                        //{
+                        //}
+                        column(CrossRefNo_SalesInvLine; "Item Reference No.")
                         {
                         }
 
@@ -1096,9 +1099,11 @@ report 50020 "Sales - Invoice ITB"
                                     TextLine[TextLineIdx] := ParamText[ParamIdx];
                                 END;
                                 070721 */
-                                IF "Cross-Reference No." <> '' then begin
+                                //IF "Cross-Reference No." <> '' then begin
+                                if "Item Reference No." <> '' then begin
                                     TextLineIdx += 1;
-                                    TextLine[TextLineIdx] := YourItemLbl + "Cross-Reference No.";
+                                    //TextLine[TextLineIdx] := YourItemLbl + "Cross-Reference No.";
+                                    TextLine[TextLineIdx] := YourItemLbl + "Item Reference No.";
                                 end;
                                 //070721
                                 StkKrt := 0;

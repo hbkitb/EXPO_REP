@@ -937,9 +937,11 @@ report 50026 "Order Confirmation ITB"
                                     TextLine[TextLineIdx] := ParamText[ParamIdx];
                                 END;
                                 070721 */
-                                IF SalesLine."Cross-Reference No." <> '' then begin
+                                //IF SalesLine."Cross-Reference No." <> '' then begin
+                                IF SalesLine."Item Reference No." <> '' then begin
                                     TextLineIdx += 1;
-                                    TextLine[TextLineIdx] := YourItemLbl + SalesLine."Cross-Reference No.";
+                                    //TextLine[TextLineIdx] := YourItemLbl + SalesLine."Cross-Reference No.";
+                                    TextLine[TextLineIdx] := YourItemLbl + SalesLine."Item Reference No.";
                                 end;
                                 //070721
                                 StkKrt := 0;
