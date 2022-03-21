@@ -939,9 +939,11 @@ report 50001 "Sales DeliveryNote ITB"
                                 END;
                                 */
 
-                                IF SalesLine."Cross-Reference No." <> '' then begin
+                                //IF SalesLine."Cross-Reference No." <> '' then begin
+                                IF SalesLine."Item Reference No." <> '' then begin
                                     TextLineIdx += 1;
-                                    TextLine[TextLineIdx] := YourItemLbl + SalesLine."Cross-Reference No.";
+                                    //TextLine[TextLineIdx] := YourItemLbl + SalesLine."Cross-Reference No.";
+                                    TextLine[TextLineIdx] := YourItemLbl + SalesLine."Item Reference No."; //210322
                                 end;
                                 //070721
                                 StkKrt := 0;

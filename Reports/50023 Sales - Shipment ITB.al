@@ -751,9 +751,9 @@ report 50023 "Sales - Shipment ITB"
                                     TextLine[TextLineIdx] := ParamText[ParamIdx];
                                 END;
                                 */
-                                IF "Cross-Reference No." <> '' then begin
+                                IF "Item Reference No." <> '' then begin
                                     TextLineIdx += 1;
-                                    TextLine[TextLineIdx] := YourItemLbl + "Cross-Reference No.";
+                                    TextLine[TextLineIdx] := YourItemLbl + "Item Reference No.";
                                 end;
                                 //070721
                                 StkKrt := 0;
