@@ -332,6 +332,10 @@ report 50026 "Order Confirmation ITB"
             column(BoolYes; BoolYes)
             {
             }
+            column(LevUgeLbl; LevUgeLbl)
+            {
+            }
+
 
             dataitem(CopyLoop; Integer)
             {
@@ -2261,6 +2265,7 @@ report 50026 "Order Confirmation ITB"
         BoolNo: TextConst DAN = 'Nej', DEU = 'Nein', ENU = 'No';  //HBK / ITB
         BoolYes: TextConst DAN = 'Ja', DEU = 'Ja', ENU = 'Yes';  //HBK / ITB
         StkKrt: Decimal;  //HBK / ITB - 070721
+        LevUgeLbl: TextConst DAN = 'Leveringsuge', DEU = 'Versand', ENU = 'DelWeek';  //210322
 
 
     procedure InitializeRequest(NoOfCopiesFrom: Integer; ShowInternalInfoFrom: Boolean; ArchiveDocumentFrom: Boolean; LogInteractionFrom: Boolean; PrintFrom: Boolean; DisplayAsmInfo: Boolean);
