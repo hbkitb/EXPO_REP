@@ -4,7 +4,7 @@ report 50026 "Order Confirmation ITB"
 
 
     DefaultLayout = RDLC;
-    RDLCLayout = './Layouts/50026 Order Confirmation ITB.rdlc';
+    RDLCLayout = './Layouts/50026 Order Confirmation ITB.rdl';
 
     CaptionML = DAN = 'Ordrebekræftelse',
                 ENU = 'Order Confirmation';
