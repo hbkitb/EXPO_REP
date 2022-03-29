@@ -4171,6 +4171,9 @@ Code.GetData(12,3))</Value>
                   <Height>0.42333cm</Height>
                   <Width>6.37441cm</Width>
                   <ZIndex>25</ZIndex>
+                  <Visibility>
+                    <Hidden>=First(Fields!SalInvCountry.Value, "DataSet_Result")="DK" or First(Fields!SalInvCountry.Value, "DataSet_Result")=""</Hidden>
+                  </Visibility>
                   <Style>
                     <Border>
                       <Style>None</Style>
@@ -6304,6 +6307,9 @@ End Function</Code>
         </Field>
         <Field Name="PaymentTermLines2">
           <DataField>PaymentTermLines2</DataField>
+        </Field>
+        <Field Name="SalInvCountry">
+          <DataField>SalInvCountry</DataField>
         </Field>
         <Field Name="DimText">
           <DataField>DimText</DataField>

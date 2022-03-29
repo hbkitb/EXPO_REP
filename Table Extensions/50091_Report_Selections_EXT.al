@@ -783,7 +783,8 @@ tableextension 50091 "Report Selections EX ITB" extends 77
 
         IF SalesReport_Option = SalesReport_Option::"Customer no" THEN BEGIN
             ParamText := CustomerNoCaption;
-            ParamValue := SalesInvoiceHeader."Sell-to Customer No.";
+            //HBK / ITB ParamValue := SalesInvoiceHeader."Sell-to Customer No.";
+            ParamValue := SalesInvoiceHeader."Bill-to Customer No."; //HBK / ITB - 290322
         END;
 
         IF SalesReport_Option = SalesReport_Option::Date THEN BEGIN

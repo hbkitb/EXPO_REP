@@ -1358,7 +1358,17 @@ report 50020 "Sales - Invoice ITB"
                         end;
 
                         trigger OnPreDataItem()
+
+                        var
+                            CountryExt: Record "Country/Region";  //HBK / ITB
+                            ShowExtLines: Boolean;  //HBK / ITB
+
                         begin
+                            //ShowExtLines := true; //hbk vis kun bundlinier ved 3. land
+                            if CountryExt.Get("Sales Invoice Header"."Bill-to Country/Region Code") then
+                                if CountryExt."EU Country/Region Code" = '' then
+                                    ShowExtLines := true;
+                            //hbk / itb - 290322   
 
                             MessageNo := '50020';
                             MessageLanguage := "Sales Invoice Header"."Language Code";
@@ -1386,10 +1396,11 @@ report 50020 "Sales - Invoice ITB"
                             END;
 
                             IF ExtendedTextLine.FINDSET THEN
-                                REPEAT
-                                    MessageLines := ExtendedTextLine;
-                                    MessageLines.INSERT;
-                                UNTIL ExtendedTextLine.NEXT = 0;
+                                if ShowExtLines = true then  //hbk/ITB-290322
+                                    REPEAT
+                                        MessageLines := ExtendedTextLine;
+                                        MessageLines.INSERT;
+                                    UNTIL ExtendedTextLine.NEXT = 0;
 
                             IF ParamShowWeight <> ParamShowWeight::No THEN BEGIN
                                 MessageLines."Table Name" := MessageLines."Table Name"::"Standard Text";
