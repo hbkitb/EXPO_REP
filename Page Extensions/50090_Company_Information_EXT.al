@@ -13,6 +13,18 @@ pageextension 50090 "Company Information Ext ITB" extends 1
                 }
             }
         }
+
+        addafter(IBAN)
+        {
+            field(Iban02; Iban02)
+            {
+                ApplicationArea = All;
+            }
+            field(Swift02; Swift02)
+            {
+                ApplicationArea = All;
+            }
+        }
     }
 
     actions

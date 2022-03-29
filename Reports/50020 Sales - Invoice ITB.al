@@ -613,6 +613,11 @@ report 50020 "Sales - Invoice ITB"
                     column(PaymentTermLines2; PaymentTermLines[2])
                     {
                     }
+                    //HBK / ITB - 290322
+                    column(SalInvCountry; "Sales Invoice Header"."Bill-to Country/Region Code")
+                    {
+                    }
+                    //HBK / ITB - 290322
 
                     dataitem(DimensionLoop1; Integer)
                     {
@@ -1835,14 +1840,28 @@ report 50020 "Sales - Invoice ITB"
 
                 TabIdx += 1;
                 PaymentInfoLines[TabIdx] := CompanyInfo."Bank Name" + ' ' + CompanyInfo."Bank Branch No." + ' - ' + CompanyInfo."Bank Account No.";
-                IF CompanyInfo.IBAN <> '' then begin
-                    TabIdx += 1;
-                    PaymentInfoLines[TabIdx] := IBANCaption + ' ' + CompanyInfo.IBAN;
-                end;
-                IF CompanyInfo."SWIFT Code" <> '' then begin
-                    TabIdx += 1;
-                    PaymentInfoLines[TabIdx] := SWIFTCaption + ' ' + CompanyInfo."SWIFT Code";
-                end;
+                //HBK / ITB - 290322
+                if "Sales Invoice Header"."Language Code" = 'DEU' then begin
+                    IF CompanyInfo.Iban02 <> '' then begin
+                        TabIdx += 1;
+                        PaymentInfoLines[TabIdx] := IBANCaption + ' ' + CompanyInfo.Iban02;
+                    end;
+                    IF CompanyInfo.Swift02 <> '' then begin
+                        TabIdx += 1;
+                        PaymentInfoLines[TabIdx] := SWIFTCaption + ' ' + CompanyInfo.Swift02;
+                    end;
+                end
+                else begin
+                    //HBK / ITB - 290322
+                    IF CompanyInfo.IBAN <> '' then begin
+                        TabIdx += 1;
+                        PaymentInfoLines[TabIdx] := IBANCaption + ' ' + CompanyInfo.IBAN;
+                    end;
+                    IF CompanyInfo."SWIFT Code" <> '' then begin
+                        TabIdx += 1;
+                        PaymentInfoLines[TabIdx] := SWIFTCaption + ' ' + CompanyInfo."SWIFT Code";
+                    end;
+                end;  //HBK / ITB - 290322
 
                 TotalGrossWeight := 0;
                 TotalNetWeight := 0;

@@ -98,6 +98,16 @@ tableextension 50090 "Company Information EX ITB" extends 79
                               ENU = ' ,Name,Address,Address 2,PostCode-City,VAT Reg.no,Homepage,Email,Phone,Country';
             OptionMembers = " ",Name,Address,"Address 2","PostCode-City","VAT Reg.no",Homepage,Email,Phone,Country;
         }
+        field(50012; Swift02; Text[30])
+        {
+            Caption = 'SWIFT_EX2';
+            DataClassification = ToBeClassified;
+        }
+        field(50013; Iban02; Text[30])
+        {
+            Caption = 'IBAN_EX2';
+            DataClassification = ToBeClassified;
+        }
     }
 
     var

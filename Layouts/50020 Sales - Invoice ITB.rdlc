@@ -2993,7 +2993,7 @@ Cstr(Fields!ParamValue15.Value)
             </Style>
           </Tablix>
         </ReportItems>
-        <Height>14.98898cm</Height>
+        <Height>11.55998cm</Height>
         <Style />
       </Body>
       <Width>19.86051cm</Width>
@@ -4147,11 +4147,42 @@ Code.GetData(12,3))</Value>
                     <VerticalAlign>Middle</VerticalAlign>
                   </Style>
                 </Textbox>
+                <Textbox Name="Textbox70">
+                  <CanGrow>true</CanGrow>
+                  <KeepTogether>true</KeepTogether>
+                  <Paragraphs>
+                    <Paragraph>
+                      <TextRuns>
+                        <TextRun>
+                          <Value>="SE-nr.DK 19 92 69 07"</Value>
+                          <Style>
+                            <FontFamily>Segoe UI</FontFamily>
+                          </Style>
+                        </TextRun>
+                      </TextRuns>
+                      <Style>
+                        <TextAlign>Left</TextAlign>
+                      </Style>
+                    </Paragraph>
+                  </Paragraphs>
+                  <rd:DefaultName>Textbox66</rd:DefaultName>
+                  <Top>5.88465cm</Top>
+                  <Left>0.24304cm</Left>
+                  <Height>0.42333cm</Height>
+                  <Width>6.37441cm</Width>
+                  <ZIndex>25</ZIndex>
+                  <Style>
+                    <Border>
+                      <Style>None</Style>
+                    </Border>
+                    <VerticalAlign>Middle</VerticalAlign>
+                  </Style>
+                </Textbox>
               </ReportItems>
               <KeepTogether>true</KeepTogether>
               <Top>3.60266cm</Top>
               <Left>12.06835cm</Left>
-              <Height>5.99853cm</Height>
+              <Height>6.40423cm</Height>
               <Width>7.66733cm</Width>
               <ZIndex>3</ZIndex>
               <Style>
