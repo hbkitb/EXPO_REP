@@ -1923,7 +1923,7 @@ report 50000 "Sales PackingNote ITB"
         SalesSetup.GET;
 
         CompanyInfo2.GET;
-        
+
         CompanyInfo2.CALCFIELDS(Picture);
 
 
