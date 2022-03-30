@@ -332,6 +332,9 @@ report 50000 "Sales PackingNote ITB"
             column(BoolYes; BoolYes)
             {
             }
+            column(ShowCompany; ShowCompany)  //HBK / ITB - 300322
+            {
+            }
 
             dataitem(CopyLoop; Integer)
             {
@@ -1870,6 +1873,14 @@ report 50000 "Sales PackingNote ITB"
                         CaptionML = DAN = 'Vis serie-/lotnummer',
                                     ENU = 'Show Serial/Lot Number';
                     }
+                    //HBK / ITB - 300322 ->
+                    field(ShowCompany; ShowCompany)
+                    {
+                        ApplicationArea = All;
+                        CaptionML = DAN = 'Neutral uden firmaoplysninger',
+                                    ENU = 'Neutral without companyinfo';
+                    }
+                    //HBK / ITB - 300322 <- 
                 }
             }
         }
@@ -1912,6 +1923,7 @@ report 50000 "Sales PackingNote ITB"
         SalesSetup.GET;
 
         CompanyInfo2.GET;
+        
         CompanyInfo2.CALCFIELDS(Picture);
 
 
@@ -2259,6 +2271,7 @@ report 50000 "Sales PackingNote ITB"
         BoolNo: TextConst DAN = 'Nej', DEU = 'Nein', ENU = 'No';  //HBK / ITB
         BoolYes: TextConst DAN = 'Ja', DEU = 'Ja', ENU = 'Yes';  //HBK / ITB
         StkKrt: Decimal;  //HBK / ITB - 070721
+        ShowCompany: Boolean;  //HBK / ITB - 300322
 
 
     procedure InitializeRequest(NoOfCopiesFrom: Integer; ShowInternalInfoFrom: Boolean; ArchiveDocumentFrom: Boolean; LogInteractionFrom: Boolean; PrintFrom: Boolean; DisplayAsmInfo: Boolean);

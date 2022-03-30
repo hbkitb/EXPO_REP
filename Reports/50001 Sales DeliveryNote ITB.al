@@ -332,6 +332,10 @@ report 50001 "Sales DeliveryNote ITB"
             column(BoolYes; BoolYes)
             {
             }
+            column(ShowCompany; ShowCompany)  //HBK / ITB - 300322
+            {
+            }
+
 
             dataitem(CopyLoop; Integer)
             {
@@ -1873,6 +1877,14 @@ report 50001 "Sales DeliveryNote ITB"
                         CaptionML = DAN = 'Vis serie-/lotnummer',
                                     ENU = 'Show Serial/Lot Number';
                     }
+                    //HBK / ITB - 300322 ->
+                    field(ShowCompany; ShowCompany)
+                    {
+                        ApplicationArea = All;
+                        CaptionML = DAN = 'Neutral uden firmaoplysninger',
+                                    ENU = 'Neutral without companyinfo';
+                    }
+                    //HBK / ITB - 300322 <-                     
                 }
             }
         }
@@ -2262,6 +2274,7 @@ report 50001 "Sales DeliveryNote ITB"
         BoolYes: TextConst DAN = 'Ja', DEU = 'Ja', ENU = 'Yes';  //HBK / ITB
         YourItemLbl: TextConst DAN = 'Deres varenr.: ', DEU = 'Ihre Artikel Nr.: ', ENU = 'Your Artikel: ';  //HBK / ITB - 070721
         StkKrt: Decimal;   //HBK / ITB - 070721
+        ShowCompany: Boolean;  //HBK / ITB - 300322        
 
 
     procedure InitializeRequest(NoOfCopiesFrom: Integer; ShowInternalInfoFrom: Boolean; ArchiveDocumentFrom: Boolean; LogInteractionFrom: Boolean; PrintFrom: Boolean; DisplayAsmInfo: Boolean);

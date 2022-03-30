@@ -217,6 +217,7 @@
                                               <VerticalAlign>Bottom</VerticalAlign>
                                             </Style>
                                           </Textbox>
+                                          <rd:Selected>true</rd:Selected>
                                         </CellContents>
                                       </TablixCell>
                                       <TablixCell>
@@ -3896,9 +3897,6 @@ Cstr(Fields!ParamValue15.Value)
                   <Height>3cm</Height>
                   <Width>7.52808cm</Width>
                   <ZIndex>1</ZIndex>
-                  <Visibility>
-                    <Hidden>=First(Fields!ShowCompany.Value, "DataSet_Result")=true</Hidden>
-                  </Visibility>
                   <DataElementOutput>NoOutput</DataElementOutput>
                   <Style>
                     <Border />
@@ -6223,9 +6221,6 @@ Code.GetData(7,3))</Value>
               <Height>12pt</Height>
               <Width>7.85464in</Width>
               <ZIndex>7</ZIndex>
-              <Visibility>
-                <Hidden>=First(Fields!ShowCompany.Value, "DataSet_Result")=true</Hidden>
-              </Visibility>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -6328,9 +6323,6 @@ Code.GetData(7,3))</Value>
               <Height>12pt</Height>
               <Width>7.85464in</Width>
               <ZIndex>10</ZIndex>
-              <Visibility>
-                <Hidden>=First(Fields!ShowCompany.Value, "DataSet_Result")=true</Hidden>
-              </Visibility>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -6814,9 +6806,6 @@ End Function
         </Field>
         <Field Name="BoolYes">
           <DataField>BoolYes</DataField>
-        </Field>
-        <Field Name="ShowCompany">
-          <DataField>ShowCompany</DataField>
         </Field>
         <Field Name="CompanyInfo2Picture">
           <DataField>CompanyInfo2Picture</DataField>
