@@ -980,10 +980,15 @@ report 50021 "Sales - Cr.Memo ITB"
                                 ParamText[ParamIdx] := 'CustomerItemNo';
                                 ParamValue[ParamIdx] := FORMAT("No.");
                                 ReportSelections.GetParam_SalesCrMemo("Sales Cr.Memo Header", ParamIdx, ParamText[ParamIdx], ParamValue[ParamIdx]);
-                                IF ParamText[ParamIdx] <> '' THEN BEGIN
+                                //IF ParamText[ParamIdx] <> '' THEN BEGIN
+                                //    TextLineIdx += 1;
+                                //    TextLine[TextLineIdx] := ParamText[ParamIdx];
+                                //END;
+                                if "Item Reference No." <> '' then begin
                                     TextLineIdx += 1;
-                                    TextLine[TextLineIdx] := ParamText[ParamIdx];
-                                END;
+                                    //TextLine[TextLineIdx] := YourItemLbl + "Cross-Reference No.";
+                                    TextLine[TextLineIdx] := YourItemLbl + "Item Reference No.";
+                                end;
 
                                 ParamIdx := 15;
                                 ParamText[ParamIdx] := 'VendorItemNo';
@@ -1748,6 +1753,7 @@ report 50021 "Sales - Cr.Memo ITB"
         ShowLineDiscCaption: Integer;
         SalesInvLine: Record "Sales Cr.Memo Line";
         LineDiscCaptionLbl: TextConst DAN = 'Rabat %', DEU = 'Rabatt %', ENU = 'Disc. %';
+        YourItemLbl: TextConst DAN = 'Deres VareNr.: ', DEU = 'Ihre Artikel Nr.: ', ENU = 'Your Article: '; //HBK / ITB - 070721
         ShowDeliveries: Boolean;
         InvTotalExclVAT: Decimal;
         InvTotalVAT: Decimal;
