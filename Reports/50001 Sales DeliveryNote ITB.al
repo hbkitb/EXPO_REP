@@ -4,7 +4,7 @@ report 50001 "Sales DeliveryNote ITB"
 
 
     DefaultLayout = RDLC;
-    RDLCLayout = './Layouts/50001 Sales DeliveryNote ITB.rdlc';
+    RDLCLayout = './Layouts/50001 Sales DeliveryNote ITB.rdl';
 
     CaptionML = DAN = 'FØLGESEDDEL',
                 ENU = 'PACKINGLIST';
@@ -2162,7 +2162,8 @@ report 50001 "Sales DeliveryNote ITB"
         DocDateCaptionLbl: TextConst DAN = 'Dato', DEU = 'Datum', ENU = 'Date';
         CurrencyCaptionLbl: TextConst DAN = 'Valuta', DEU = 'Währung', ENU = 'Currency';
         UOMCaptionLbl: TextConst DAN = 'Krt', DEU = 'Krt.', ENU = 'Crtns'; //070721 DAN = 'Enhed', DEU = 'Einh.', ENU = 'Unit';
-        QtyCaptionLbl: TextConst DAN = 'Rl.', DEU = 'Rl/S', ENU = 'Qty'; //070721 DAN = 'Antal', DEU = 'Menge', ENU = 'Qty';
+        //QtyCaptionLbl: TextConst DAN = 'Rl.', DEU = 'Rl/S', ENU = 'Qty'; //070721 DAN = 'Antal', DEU = 'Menge', ENU = 'Qty';
+        QtyCaptionLbl: TextConst DAN = 'Stk.', DEU = 'Stck', ENU = 'Pcs.'; //070721 DAN = 'Antal', DEU = 'Menge', ENU = 'Qty';
         "//ITB.txt": Integer;
         YourRefCaptionLbl: TextConst DAN = 'Deres ref.', DEU = 'Ihre ref.', ENU = 'Your ref.';
         PaymentCaptionLbl: TextConst DAN = 'Betaling', DEU = 'Zahlung', ENU = 'Payment';

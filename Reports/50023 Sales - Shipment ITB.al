@@ -4,7 +4,7 @@ report 50023 "Sales - Shipment ITB"
 
 
     DefaultLayout = RDLC;
-    RDLCLayout = './Layouts/50023 Sales - Shipment ITB.rdlc';
+    RDLCLayout = './Layouts/50023 Sales - Shipment ITB.rdl';
 
     CaptionML = DAN = 'Salg - leverance',
                 ENU = 'Sales - Shipment';

@@ -357,6 +357,9 @@
         <Field Name="LevUgeLbl">
           <DataField>LevUgeLbl</DataField>
         </Field>
+        <Field Name="AfrulLbl">
+          <DataField>AfrulLbl</DataField>
+        </Field>
         <Field Name="CompanyInfo2Picture">
           <DataField>CompanyInfo2Picture</DataField>
         </Field>
@@ -4689,7 +4692,6 @@ Cstr(Fields!ParamValue15.Value)
                                               <PaddingRight>5pt</PaddingRight>
                                             </Style>
                                           </Textbox>
-                                          <rd:Selected>true</rd:Selected>
                                         </CellContents>
                                       </TablixCell>
                                     </TablixCells>
@@ -6602,7 +6604,7 @@ Code.GetData(9,3))</Value>
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>11.25374cm</Top>
+              <Top>10.81277cm</Top>
               <Left>14.97804cm</Left>
               <Height>11.5pt</Height>
               <Width>4.86802cm</Width>
@@ -6637,7 +6639,7 @@ Code.GetData(9,3))</Value>
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>11.65943cm</Top>
+              <Top>11.21846cm</Top>
               <Left>14.97804cm</Left>
               <Height>11.5pt</Height>
               <Width>4.86802cm</Width>
@@ -6672,7 +6674,7 @@ Code.GetData(9,3))</Value>
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>12.06513cm</Top>
+              <Top>11.62416cm</Top>
               <Left>14.97804cm</Left>
               <Height>11.5pt</Height>
               <Width>4.86802cm</Width>
@@ -6707,7 +6709,7 @@ Code.GetData(9,3))</Value>
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>12.47082cm</Top>
+              <Top>12.02985cm</Top>
               <Left>14.97804cm</Left>
               <Height>11.5pt</Height>
               <Width>4.86802cm</Width>
@@ -6951,7 +6953,7 @@ Code.GetData(9,3))</Value>
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>11.25374cm</Top>
+              <Top>10.81277cm</Top>
               <Left>11.44179cm</Left>
               <Height>11.5pt</Height>
               <Width>3.4657cm</Width>
@@ -6986,7 +6988,7 @@ Code.GetData(9,3))</Value>
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>11.65943cm</Top>
+              <Top>11.21846cm</Top>
               <Left>11.44179cm</Left>
               <Height>11.5pt</Height>
               <Width>3.4657cm</Width>
@@ -7021,7 +7023,7 @@ Code.GetData(9,3))</Value>
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>12.06513cm</Top>
+              <Top>11.62416cm</Top>
               <Left>11.44179cm</Left>
               <Height>11.5pt</Height>
               <Width>3.4657cm</Width>
@@ -7056,13 +7058,83 @@ Code.GetData(9,3))</Value>
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>12.47082cm</Top>
+              <Top>12.02985cm</Top>
               <Left>11.44179cm</Left>
               <Height>11.5pt</Height>
               <Width>3.4657cm</Width>
               <ZIndex>30</ZIndex>
               <Visibility>
                 <Hidden>=First(Fields!Trykfarve1.Value, "DataSet_Result")=""</Hidden>
+              </Visibility>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <VerticalAlign>Middle</VerticalAlign>
+              </Style>
+            </Textbox>
+            <Textbox Name="ShipToAddr28">
+              <CanGrow>true</CanGrow>
+              <CanShrink>true</CanShrink>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=First(Fields!AfrulningsRetning.Value, "DataSet_Result")</Value>
+                      <Style>
+                        <FontStyle>Normal</FontStyle>
+                        <FontFamily>Segoe UI</FontFamily>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>12.47082cm</Top>
+              <Left>14.97805cm</Left>
+              <Height>11.5pt</Height>
+              <Width>4.96857cm</Width>
+              <ZIndex>31</ZIndex>
+              <Visibility>
+                <Hidden>=First(Fields!AfrulningsRetning.Value, "DataSet_Result")=""</Hidden>
+              </Visibility>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <VerticalAlign>Middle</VerticalAlign>
+              </Style>
+            </Textbox>
+            <Textbox Name="ShipToAddr29">
+              <CanGrow>true</CanGrow>
+              <CanShrink>true</CanShrink>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=First(Fields!AfrulLbl.Value, "DataSet_Result")</Value>
+                      <Style>
+                        <FontStyle>Normal</FontStyle>
+                        <FontFamily>Segoe UI</FontFamily>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>12.47082cm</Top>
+              <Left>11.4418cm</Left>
+              <Height>11.5pt</Height>
+              <Width>3.46568cm</Width>
+              <ZIndex>32</ZIndex>
+              <Visibility>
+                <Hidden>=First(Fields!AfrulningsRetning.Value, "DataSet_Result")=" "</Hidden>
               </Visibility>
               <Style>
                 <Border>
