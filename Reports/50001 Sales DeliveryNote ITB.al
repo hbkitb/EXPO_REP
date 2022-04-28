@@ -335,6 +335,10 @@ report 50001 "Sales DeliveryNote ITB"
             column(ShowCompany; ShowCompany)  //HBK / ITB - 300322
             {
             }
+            column(AfrulLbl; AfrulLbl)  //HBK / ITB - 300322
+            {
+            }
+
 
 
             dataitem(CopyLoop; Integer)
@@ -2145,6 +2149,7 @@ report 50001 "Sales DeliveryNote ITB"
         ShipmentMethodCaptionLbl: TextConst DAN = 'Levering', DEU = 'Lieferung', ENU = 'Shipment';
         DocumentDateCaptionLbl: TextConst DAN = 'Bilagsdato', DEU = 'Beleg Datum', ENU = 'Document Date';
         AllowInvDiscCaptionLbl: TextConst DAN = 'Tillad fakturarabat', DEU = 'Skonto erlaubt', ENU = 'Allow Invoice Discount';
+        AfrulLbl: TextConst DAN = 'Afrulning', DEU = 'Abrollrichtung', ENU = 'Unwind direction';
         PageCaptionLbl: TextConst DAN = 'Side', DEU = 'Seite', ENU = 'Page';
         BottomLine: array[2] of Text[250];
         TotalExVAT: Decimal;

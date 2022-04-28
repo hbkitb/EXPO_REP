@@ -233,6 +233,10 @@ report 50023 "Sales - Shipment ITB"
             column(TotalNetWeight; TotalNetWeight)
             {
             }
+            column(AfrulLbl; AfrulLbl)
+            {
+
+            }
 
 
             dataitem(CopyLoop; Integer)
@@ -1398,6 +1402,7 @@ report 50023 "Sales - Shipment ITB"
         YourOrderNoCaptionLbl: TextConst DAN = 'Deres ordrenr.', DEU = 'Ihre Auftragsnr.', ENU = 'Your Order No.';
         UOMCaptionLbl: TextConst DAN = 'Krt', DEU = 'Krt.', ENU = 'Crtns'; //080721 DAN = 'Enhed', DEU = 'Einh.', ENU = 'Unit';
         OrderNoCaptionLbl: TextConst DAN = 'Vores ordrenr.', DEU = 'Unser Auftragsnr.', ENU = 'Our Order No.';
+        AfrulLbl: TextConst DAN = 'Afrulning', DEU = 'Abrollrichtung', ENU = 'Unwind direction';
         ItemTrackingDocMgt: Codeunit "Item Tracking Doc. Management";
         "//ITB.Temporary": Integer;
         PassSalesHeader: Record "Sales Header";

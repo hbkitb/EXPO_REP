@@ -335,6 +335,10 @@ report 50000 "Sales PackingNote ITB"
             column(ShowCompany; ShowCompany)  //HBK / ITB - 300322
             {
             }
+            column(AfrulLbl; AfrulLbl)  //HBK / ITB - 300322
+            {
+            }
+
 
             dataitem(CopyLoop; Integer)
             {
@@ -2268,6 +2272,7 @@ report 50000 "Sales PackingNote ITB"
         KorrekLbl: TextConst DAN = 'Korrektur', DEU = 'Korrektur', ENU = 'Proof';  //HBK / ITB
         KlicheLbl: TextConst DAN = 'Kliche', DEU = 'Klichee Nr', ENU = 'Cliche no';  //HBK / ITB
         TrykLgdLbl: TextConst DAN = 'Tryklængde', DEU = 'Drucklänge', ENU = 'Length';  //HBK / ITB
+        AfrulLbl: TextConst DAN = 'Afrulning', DEU = 'Abrollrichtung', ENU = 'Unwind direction';
         BoolNo: TextConst DAN = 'Nej', DEU = 'Nein', ENU = 'No';  //HBK / ITB
         BoolYes: TextConst DAN = 'Ja', DEU = 'Ja', ENU = 'Yes';  //HBK / ITB
         StkKrt: Decimal;  //HBK / ITB - 070721
