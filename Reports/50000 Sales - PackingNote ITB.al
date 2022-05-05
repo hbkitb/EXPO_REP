@@ -338,6 +338,9 @@ report 50000 "Sales PackingNote ITB"
             column(AfrulLbl; AfrulLbl)  //HBK / ITB - 300322
             {
             }
+            column(LevUgeLbl; LevUgeLbl)
+            {
+            }
 
 
             dataitem(CopyLoop; Integer)
@@ -2164,6 +2167,7 @@ report 50000 "Sales PackingNote ITB"
         PaymentCaptionLbl: TextConst DAN = 'Betaling', DEU = 'Zahlung', ENU = 'Payment';
         YourOrderNoCaptionLbl: TextConst DAN = 'Deres ordernr.', DEU = 'Ihre Autragsnr.', ENU = 'Your Order No.';
         YourItemLbl: TextConst DAN = 'Deres varenr.: ', DEU = 'Ihre Artikel Nr.: ', ENU = 'Your Artikel: ';  //HBK / ITB - 070721
+        LevUgeLbl: TextConst DAN = 'Afsendes', DEU = 'Versand', ENU = 'Delivery';  //050522
         "//ITB.var": Integer;
         VATPercent: Decimal;
         "//ITB.03": Integer;

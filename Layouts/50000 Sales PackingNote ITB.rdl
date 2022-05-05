@@ -4243,6 +4243,7 @@ Cstr(Fields!ParamValue15.Value)
                       </Style>
                     </Paragraph>
                   </Paragraphs>
+                  <Left>0.09663cm</Left>
                   <Height>0.25in</Height>
                   <Width>8.40427cm</Width>
                   <Style>
@@ -4274,6 +4275,7 @@ Cstr(Fields!ParamValue15.Value)
                     </Paragraph>
                   </Paragraphs>
                   <Top>0.73063cm</Top>
+                  <Left>0.09663cm</Left>
                   <Height>12pt</Height>
                   <Width>1.36445in</Width>
                   <ZIndex>1</ZIndex>
@@ -4305,7 +4307,7 @@ Code.GetData(1,3))</Value>
                     </Paragraph>
                   </Paragraphs>
                   <Top>0.73063cm</Top>
-                  <Left>3.53625cm</Left>
+                  <Left>3.63288cm</Left>
                   <Height>12pt</Height>
                   <Width>4.86802cm</Width>
                   <ZIndex>2</ZIndex>
@@ -4338,6 +4340,7 @@ Code.GetData(1,3))</Value>
                     </Paragraph>
                   </Paragraphs>
                   <Top>2.42396cm</Top>
+                  <Left>0.09663cm</Left>
                   <Height>12pt</Height>
                   <Width>3.4657cm</Width>
                   <ZIndex>3</ZIndex>
@@ -4369,7 +4372,7 @@ Code.GetData(5,3))</Value>
                     </Paragraph>
                   </Paragraphs>
                   <Top>2.42396cm</Top>
-                  <Left>3.53625cm</Left>
+                  <Left>3.63288cm</Left>
                   <Height>12pt</Height>
                   <Width>4.86802cm</Width>
                   <ZIndex>4</ZIndex>
@@ -4401,6 +4404,7 @@ Code.GetData(5,3))</Value>
                     </Paragraph>
                   </Paragraphs>
                   <Top>0.62098in</Top>
+                  <Left>0.09663cm</Left>
                   <Height>12pt</Height>
                   <Width>3.4657cm</Width>
                   <ZIndex>5</ZIndex>
@@ -4435,7 +4439,7 @@ Code.GetData(3,3))</Value>
                     </Paragraph>
                   </Paragraphs>
                   <Top>0.62098in</Top>
-                  <Left>3.53625cm</Left>
+                  <Left>3.63288cm</Left>
                   <Height>12pt</Height>
                   <Width>4.86802cm</Width>
                   <ZIndex>6</ZIndex>
@@ -4467,7 +4471,7 @@ Code.GetData(4,3))</Value>
                     </Paragraph>
                   </Paragraphs>
                   <Top>2.00063cm</Top>
-                  <Left>3.53625cm</Left>
+                  <Left>3.63288cm</Left>
                   <Height>12pt</Height>
                   <Width>4.86802cm</Width>
                   <ZIndex>7</ZIndex>
@@ -4499,6 +4503,7 @@ Code.GetData(4,3))</Value>
                     </Paragraph>
                   </Paragraphs>
                   <Top>0.78765in</Top>
+                  <Left>0.09663cm</Left>
                   <Height>12pt</Height>
                   <Width>3.4657cm</Width>
                   <ZIndex>8</ZIndex>
@@ -4529,6 +4534,7 @@ Code.GetData(4,3))</Value>
                     </Paragraph>
                   </Paragraphs>
                   <Top>0.45432in</Top>
+                  <Left>0.09663cm</Left>
                   <Height>12pt</Height>
                   <Width>3.4657cm</Width>
                   <ZIndex>9</ZIndex>
@@ -4562,7 +4568,7 @@ Code.GetData(2,3))</Value>
                     </Paragraph>
                   </Paragraphs>
                   <Top>1.15396cm</Top>
-                  <Left>3.53625cm</Left>
+                  <Left>3.63288cm</Left>
                   <Height>12pt</Height>
                   <Width>4.86802cm</Width>
                   <ZIndex>10</ZIndex>
@@ -4597,7 +4603,7 @@ Code.GetData(8,3))</Value>
                     </Paragraph>
                   </Paragraphs>
                   <Top>3.69396cm</Top>
-                  <Left>3.53625cm</Left>
+                  <Left>3.63288cm</Left>
                   <Height>12pt</Height>
                   <Width>4.86802cm</Width>
                   <ZIndex>11</ZIndex>
@@ -4629,6 +4635,7 @@ Code.GetData(8,3))</Value>
                     </Paragraph>
                   </Paragraphs>
                   <Top>1.45432in</Top>
+                  <Left>0.09663cm</Left>
                   <Height>12pt</Height>
                   <Width>3.4657cm</Width>
                   <ZIndex>12</ZIndex>
@@ -4659,6 +4666,7 @@ Code.GetData(8,3))</Value>
                     </Paragraph>
                   </Paragraphs>
                   <Top>1.12098in</Top>
+                  <Left>0.09663cm</Left>
                   <Height>12pt</Height>
                   <Width>3.4657cm</Width>
                   <ZIndex>13</ZIndex>
@@ -4692,7 +4700,7 @@ Code.GetData(6,3))</Value>
                     </Paragraph>
                   </Paragraphs>
                   <Top>2.8473cm</Top>
-                  <Left>3.53625cm</Left>
+                  <Left>3.63288cm</Left>
                   <Height>12pt</Height>
                   <Width>4.86802cm</Width>
                   <ZIndex>14</ZIndex>
@@ -4724,8 +4732,8 @@ Code.GetData(6,3))</Value>
                     </Paragraph>
                   </Paragraphs>
                   <rd:DefaultName>Textbox1</rd:DefaultName>
-                  <Top>1.62099in</Top>
-                  <Left>0in</Left>
+                  <Top>1.83766in</Top>
+                  <Left>0.03804in</Left>
                   <Height>12pt</Height>
                   <Width>1.36445in</Width>
                   <ZIndex>15</ZIndex>
@@ -4758,8 +4766,8 @@ Code.GetData(9,3))</Value>
                     </Paragraph>
                   </Paragraphs>
                   <rd:DefaultName>Textbox1</rd:DefaultName>
-                  <Top>1.62098in</Top>
-                  <Left>1.39223in</Left>
+                  <Top>1.83765in</Top>
+                  <Left>1.43027in</Left>
                   <Height>12pt</Height>
                   <Width>1.91654in</Width>
                   <ZIndex>16</ZIndex>
@@ -4793,7 +4801,7 @@ Code.GetData(7,3))</Value>
                   </Paragraphs>
                   <rd:DefaultName>Textbox4</rd:DefaultName>
                   <Top>1.28765in</Top>
-                  <Left>1.39223in</Left>
+                  <Left>1.43027in</Left>
                   <Height>12pt</Height>
                   <Width>1.91654in</Width>
                   <ZIndex>17</ZIndex>
@@ -4824,7 +4832,7 @@ Code.GetData(7,3))</Value>
                   </Paragraphs>
                   <rd:DefaultName>Textbox69</rd:DefaultName>
                   <Top>1.28765in</Top>
-                  <Left>0in</Left>
+                  <Left>0.03804in</Left>
                   <Height>0.16667in</Height>
                   <Width>1.36445in</Width>
                   <ZIndex>18</ZIndex>
@@ -4855,7 +4863,8 @@ Code.GetData(7,3))</Value>
                     </Paragraph>
                   </Paragraphs>
                   <rd:DefaultName>Textbox3</rd:DefaultName>
-                  <Top>4.54064cm</Top>
+                  <Top>5.09097cm</Top>
+                  <Left>0.09663cm</Left>
                   <Height>0.42333cm</Height>
                   <Width>3.4657cm</Width>
                   <ZIndex>19</ZIndex>
@@ -4886,7 +4895,8 @@ Code.GetData(7,3))</Value>
                     </Paragraph>
                   </Paragraphs>
                   <rd:DefaultName>Textbox3</rd:DefaultName>
-                  <Top>4.96397cm</Top>
+                  <Top>5.5143cm</Top>
+                  <Left>0.09663cm</Left>
                   <Height>0.42333cm</Height>
                   <Width>3.4657cm</Width>
                   <ZIndex>20</ZIndex>
@@ -4917,8 +4927,8 @@ Code.GetData(7,3))</Value>
                     </Paragraph>
                   </Paragraphs>
                   <rd:DefaultName>Textbox3</rd:DefaultName>
-                  <Top>4.54063cm</Top>
-                  <Left>3.53625cm</Left>
+                  <Top>5.09096cm</Top>
+                  <Left>3.63288cm</Left>
                   <Height>0.42333cm</Height>
                   <Width>4.86802cm</Width>
                   <ZIndex>21</ZIndex>
@@ -4949,8 +4959,8 @@ Code.GetData(7,3))</Value>
                     </Paragraph>
                   </Paragraphs>
                   <rd:DefaultName>Textbox3</rd:DefaultName>
-                  <Top>4.96396cm</Top>
-                  <Left>3.53625cm</Left>
+                  <Top>5.51429cm</Top>
+                  <Left>3.63288cm</Left>
                   <Height>0.42333cm</Height>
                   <Width>4.86802cm</Width>
                   <ZIndex>22</ZIndex>
@@ -4980,7 +4990,8 @@ Code.GetData(7,3))</Value>
                     </Paragraph>
                   </Paragraphs>
                   <rd:DefaultName>Textbox16</rd:DefaultName>
-                  <Top>5.3873cm</Top>
+                  <Top>5.93763cm</Top>
+                  <Left>0.09663cm</Left>
                   <Height>0.42333cm</Height>
                   <Width>3.4657cm</Width>
                   <ZIndex>23</ZIndex>
@@ -5010,8 +5021,8 @@ Code.GetData(7,3))</Value>
                     </Paragraph>
                   </Paragraphs>
                   <rd:DefaultName>Textbox16</rd:DefaultName>
-                  <Top>5.3873cm</Top>
-                  <Left>3.53625cm</Left>
+                  <Top>5.93763cm</Top>
+                  <Left>3.63288cm</Left>
                   <Height>0.42333cm</Height>
                   <Width>4.86802cm</Width>
                   <ZIndex>24</ZIndex>
@@ -5022,12 +5033,74 @@ Code.GetData(7,3))</Value>
                     <VerticalAlign>Middle</VerticalAlign>
                   </Style>
                 </Textbox>
+                <Textbox Name="Textbox18">
+                  <CanGrow>true</CanGrow>
+                  <KeepTogether>true</KeepTogether>
+                  <Paragraphs>
+                    <Paragraph>
+                      <TextRuns>
+                        <TextRun>
+                          <Value>=First(Fields!LevUgeLbl.Value, "DataSet_Result")</Value>
+                          <Style>
+                            <FontFamily>Segoe UI</FontFamily>
+                          </Style>
+                        </TextRun>
+                      </TextRuns>
+                      <Style>
+                        <TextAlign>Left</TextAlign>
+                      </Style>
+                    </Paragraph>
+                  </Paragraphs>
+                  <rd:DefaultName>Textbox16</rd:DefaultName>
+                  <Top>4.15353cm</Top>
+                  <Left>0.09663cm</Left>
+                  <Height>0.45766cm</Height>
+                  <Width>3.4657cm</Width>
+                  <ZIndex>25</ZIndex>
+                  <Style>
+                    <Border>
+                      <Style>None</Style>
+                    </Border>
+                    <VerticalAlign>Middle</VerticalAlign>
+                  </Style>
+                </Textbox>
+                <Textbox Name="Textbox19">
+                  <CanGrow>true</CanGrow>
+                  <KeepTogether>true</KeepTogether>
+                  <Paragraphs>
+                    <Paragraph>
+                      <TextRuns>
+                        <TextRun>
+                          <Value>=First(Fields!DelWeek.Value, "DataSet_Result")</Value>
+                          <Style>
+                            <FontFamily>Segoe UI</FontFamily>
+                          </Style>
+                        </TextRun>
+                      </TextRuns>
+                      <Style>
+                        <TextAlign>Right</TextAlign>
+                      </Style>
+                    </Paragraph>
+                  </Paragraphs>
+                  <rd:DefaultName>Textbox16</rd:DefaultName>
+                  <Top>4.18786cm</Top>
+                  <Left>3.63288cm</Left>
+                  <Height>0.42333cm</Height>
+                  <Width>4.86802cm</Width>
+                  <ZIndex>26</ZIndex>
+                  <Style>
+                    <Border>
+                      <Style>None</Style>
+                    </Border>
+                    <VerticalAlign>Middle</VerticalAlign>
+                  </Style>
+                </Textbox>
               </ReportItems>
               <KeepTogether>true</KeepTogether>
               <Top>4.45991cm</Top>
-              <Left>11.44179cm</Left>
-              <Height>6.14698cm</Height>
-              <Width>8.55637cm</Width>
+              <Left>11.34516cm</Left>
+              <Height>6.67615cm</Height>
+              <Width>8.653cm</Width>
               <ZIndex>2</ZIndex>
               <Style>
                 <Border>
@@ -5315,7 +5388,7 @@ Code.GetData(7,3))</Value>
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>10.9574cm</Top>
+              <Top>11.5924cm</Top>
               <Left>3.23306cm</Left>
               <Height>11.5pt</Height>
               <Width>5.49791cm</Width>
@@ -5350,7 +5423,7 @@ Code.GetData(7,3))</Value>
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>11.3631cm</Top>
+              <Top>11.9981cm</Top>
               <Left>3.23306cm</Left>
               <Height>11.5pt</Height>
               <Width>5.49791cm</Width>
@@ -5385,7 +5458,7 @@ Code.GetData(7,3))</Value>
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>11.76879cm</Top>
+              <Top>12.40379cm</Top>
               <Left>3.23306cm</Left>
               <Height>11.5pt</Height>
               <Width>5.49791cm</Width>
@@ -5420,7 +5493,7 @@ Code.GetData(7,3))</Value>
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>12.17449cm</Top>
+              <Top>12.80949cm</Top>
               <Left>3.23306cm</Left>
               <Height>11.5pt</Height>
               <Width>5.49791cm</Width>
@@ -5455,7 +5528,7 @@ Code.GetData(7,3))</Value>
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>12.58018cm</Top>
+              <Top>13.21518cm</Top>
               <Left>3.23306cm</Left>
               <Height>11.5pt</Height>
               <Width>5.49791cm</Width>
@@ -5490,7 +5563,7 @@ Code.GetData(7,3))</Value>
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>10.9574cm</Top>
+              <Top>11.5924cm</Top>
               <Left>14.97804cm</Left>
               <Height>11.5pt</Height>
               <Width>4.86802cm</Width>
@@ -5525,7 +5598,7 @@ Code.GetData(7,3))</Value>
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>11.3631cm</Top>
+              <Top>11.9981cm</Top>
               <Left>14.97804cm</Left>
               <Height>11.5pt</Height>
               <Width>4.86802cm</Width>
@@ -5560,7 +5633,7 @@ Code.GetData(7,3))</Value>
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>11.76879cm</Top>
+              <Top>12.40379cm</Top>
               <Left>14.97804cm</Left>
               <Height>11.5pt</Height>
               <Width>4.86802cm</Width>
@@ -5595,7 +5668,7 @@ Code.GetData(7,3))</Value>
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>12.17449cm</Top>
+              <Top>12.80949cm</Top>
               <Left>14.97804cm</Left>
               <Height>11.5pt</Height>
               <Width>4.86802cm</Width>
@@ -5630,7 +5703,7 @@ Code.GetData(7,3))</Value>
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>12.58018cm</Top>
+              <Top>13.21518cm</Top>
               <Left>14.97804cm</Left>
               <Height>11.5pt</Height>
               <Width>4.86802cm</Width>
@@ -5665,7 +5738,7 @@ Code.GetData(7,3))</Value>
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>10.9574cm</Top>
+              <Top>11.5924cm</Top>
               <Left>0.03094cm</Left>
               <Height>11.5pt</Height>
               <Width>3.02573cm</Width>
@@ -5700,7 +5773,7 @@ Code.GetData(7,3))</Value>
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>11.3631cm</Top>
+              <Top>11.9981cm</Top>
               <Left>0.03094cm</Left>
               <Height>11.5pt</Height>
               <Width>3.02573cm</Width>
@@ -5735,7 +5808,7 @@ Code.GetData(7,3))</Value>
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>11.76879cm</Top>
+              <Top>12.40379cm</Top>
               <Left>0.03094cm</Left>
               <Height>11.5pt</Height>
               <Width>3.02573cm</Width>
@@ -5770,7 +5843,7 @@ Code.GetData(7,3))</Value>
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>12.17449cm</Top>
+              <Top>12.80949cm</Top>
               <Left>0.03094cm</Left>
               <Height>11.5pt</Height>
               <Width>3.02573cm</Width>
@@ -5805,7 +5878,7 @@ Code.GetData(7,3))</Value>
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>12.58018cm</Top>
+              <Top>13.21518cm</Top>
               <Left>0.03094cm</Left>
               <Height>11.5pt</Height>
               <Width>3.02573cm</Width>
@@ -5840,7 +5913,7 @@ Code.GetData(7,3))</Value>
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>10.9574cm</Top>
+              <Top>11.5924cm</Top>
               <Left>11.44179cm</Left>
               <Height>11.5pt</Height>
               <Width>3.4657cm</Width>
@@ -5875,7 +5948,7 @@ Code.GetData(7,3))</Value>
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>11.3631cm</Top>
+              <Top>11.9981cm</Top>
               <Left>11.44179cm</Left>
               <Height>11.5pt</Height>
               <Width>3.4657cm</Width>
@@ -5910,7 +5983,7 @@ Code.GetData(7,3))</Value>
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>11.76879cm</Top>
+              <Top>12.40379cm</Top>
               <Left>11.44179cm</Left>
               <Height>11.5pt</Height>
               <Width>3.4657cm</Width>
@@ -5945,7 +6018,7 @@ Code.GetData(7,3))</Value>
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>12.17449cm</Top>
+              <Top>12.80949cm</Top>
               <Left>11.44179cm</Left>
               <Height>11.5pt</Height>
               <Width>3.4657cm</Width>
@@ -5980,7 +6053,7 @@ Code.GetData(7,3))</Value>
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>12.58018cm</Top>
+              <Top>13.21518cm</Top>
               <Left>11.44179cm</Left>
               <Height>11.5pt</Height>
               <Width>3.4657cm</Width>
@@ -6015,7 +6088,7 @@ Code.GetData(7,3))</Value>
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>13.05643cm</Top>
+              <Top>13.69143cm</Top>
               <Left>14.97804cm</Left>
               <Height>11.5pt</Height>
               <Width>4.86802cm</Width>
@@ -6050,7 +6123,7 @@ Code.GetData(7,3))</Value>
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>13.05643cm</Top>
+              <Top>13.69143cm</Top>
               <Left>11.44179cm</Left>
               <Height>11.5pt</Height>
               <Width>3.4657cm</Width>
@@ -6623,6 +6696,9 @@ End Function
         </Field>
         <Field Name="AfrulLbl">
           <DataField>AfrulLbl</DataField>
+        </Field>
+        <Field Name="LevUgeLbl">
+          <DataField>LevUgeLbl</DataField>
         </Field>
         <Field Name="CompanyInfo2Picture">
           <DataField>CompanyInfo2Picture</DataField>

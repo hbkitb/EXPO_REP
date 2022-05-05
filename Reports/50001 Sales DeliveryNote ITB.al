@@ -338,6 +338,9 @@ report 50001 "Sales DeliveryNote ITB"
             column(AfrulLbl; AfrulLbl)  //HBK / ITB - 300322
             {
             }
+            column(LevUgeLbl; LevUgeLbl)
+            {
+            }
 
 
 
@@ -2150,6 +2153,7 @@ report 50001 "Sales DeliveryNote ITB"
         DocumentDateCaptionLbl: TextConst DAN = 'Bilagsdato', DEU = 'Beleg Datum', ENU = 'Document Date';
         AllowInvDiscCaptionLbl: TextConst DAN = 'Tillad fakturarabat', DEU = 'Skonto erlaubt', ENU = 'Allow Invoice Discount';
         AfrulLbl: TextConst DAN = 'Afrulning', DEU = 'Abrollrichtung', ENU = 'Unwind direction';
+        LevUgeLbl: TextConst DAN = 'Afsendes', DEU = 'Versand', ENU = 'Delivery';  //210322
         PageCaptionLbl: TextConst DAN = 'Side', DEU = 'Seite', ENU = 'Page';
         BottomLine: array[2] of Text[250];
         TotalExVAT: Decimal;
