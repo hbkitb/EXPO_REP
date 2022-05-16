@@ -2026,7 +2026,7 @@ report 50000 "Sales PackingNote ITB"
         Text001: TextConst DAN = 'I alt %1', DEU = 'Gesamt %1', ENU = 'Total %1';
         Text002: TextConst DAN = 'Total %1', DEU = 'Gesamt %1', ENU = 'Total %1';
         Text003: TextConst DAN = 'KOPI', DEU = 'KOPIE', ENU = 'COPY';
-        Text004: TextConst DAN = 'PAKKESEDDEL %1', DEU = 'PACKLISTE %1', ENU = 'PACKING LIST %1';
+        Text004: TextConst DAN = 'PAKKESEDDEL %1', DEU = 'PACKNOTE %1', ENU = 'PACKING NOTE %1';
         PageCaptionCapLbl: TextConst DAN = 'Side', DEU = 'Seite', ENU = 'Page';
         PageCaptionCap: TextConst DAN = '%1 af %2', DEU = '%1 von %2', ENU = '%1 of %2';
         Text006: TextConst DAN = 'Momsgrundlag', DEU = 'MwSt. Grundlage', ENU = 'VAT Base';

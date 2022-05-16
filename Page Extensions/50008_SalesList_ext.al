@@ -17,7 +17,7 @@ pageextension 50008 OrderList_REP_Ext extends "Sales Order List"
             action(PakkelisteREP)
             {
                 ApplicationArea = All;
-                Caption = 'Pak_LIST_SAM_REP';
+                Caption = 'Pakkeliste';
                 Image = CreatePutawayPick;
                 Promoted = true;
 
@@ -31,7 +31,7 @@ pageextension 50008 OrderList_REP_Ext extends "Sales Order List"
                     TempSalesLine: Record "Sales Line";  // temporary;
                     HeaderOK: Boolean;
                     LineNo: integer;
-                    Pick: Report "Sales PackingNote ITB";    //"Pick Instruction";  //"Standard Sales - Order Conf.";
+                    Pick: Report "Sales_Samle_Pack ITB";    //"Pick Instruction";  //"Standard Sales - Order Conf.";
                     SalNum: Code[20];
 
                 begin
