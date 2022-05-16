@@ -830,6 +830,13 @@ report 50002 "Sales_Samle_Pack ITB"
                         column(WeightLine; WeightLine)  //070721
                         {
                         }
+                        column(LineReference; LineReference)  //160522
+                        {
+                        }
+                        column(RekvisCaption; RekvisCaption)  //160522
+                        {
+                        }
+
 
                         dataitem(DimensionLoop2; Integer)
                         {
@@ -993,14 +1000,18 @@ report 50002 "Sales_Samle_Pack ITB"
                                         StkKrt := 0;
                                 end;
                                 //160522_Palle
-                                WeightLine := salesline.Quantity * itemvar."Gross Weight";
+                                LineReference := SalesLine.LineReference;  //160522 "Sales Header"."External Document No.";
+                                if itemvar."Net Weight" <> 0 then
+                                    WeightLine := salesline.Quantity * itemvar."Net Weight"
+                                else
+                                    WeightLine := salesline.Quantity * itemvar."Gross Weight";
                                 if salesline.PalleNr > PallerIalt then
                                     PallerIalt := SalesLine.PalleNr;
                                 KartonerIalt := KartonerIalt + StkKrt;
                                 TotalNetWeight := TotalNetWeight + WeightLine;
                                 TotalGrossWeight := TotalNetWeight + (PallerIalt * 12);
 
-                                //070721                                
+                                //070721                           
 
                                 ParamIdx := 15;
                                 ParamText[ParamIdx] := 'VendorItemNo';
@@ -2320,6 +2331,7 @@ report 50002 "Sales_Samle_Pack ITB"
         BoolYes: TextConst DAN = 'Ja', DEU = 'Ja', ENU = 'Yes';  //HBK / ITB
         StkKrt: Decimal;  //HBK / ITB - 070721
         ShowCompany: Boolean;  //HBK / ITB - 300322
+        LineReference: Text[30]; //160522
 
         RekvisCaption: TextConst DAN = 'Rekvisition', DEU = 'Bestellnummer', ENU = 'Requisition';  //HBK / ITB - 080721
         PallerCaption: TextConst DAN = 'Paller á 12 kg', DEU = 'Paletten je 12 kg', ENU = 'Pallets of each 12 Kg';  //HBK / ITB - 080721      

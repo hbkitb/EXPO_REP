@@ -63,6 +63,7 @@ pageextension 50008 OrderList_REP_Ext extends "Sales Order List"
                                     TempSalesLine := Hline;
                                     TempSalesLine."Document No." := SalNum;
                                     TempSalesLine."Line No." := LineNo;
+                                    TempSalesLine.LineReference := head."External Document No.";  //160522
                                     TempSalesLine.Insert;
 
                                     LineNo := LineNo + 10000;
