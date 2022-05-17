@@ -244,7 +244,13 @@
                                             </Paragraphs>
                                             <rd:DefaultName>UnitPriceCaption</rd:DefaultName>
                                             <ZIndex>156</ZIndex>
+                                            <Visibility>
+                                              <Hidden>true</Hidden>
+                                            </Visibility>
                                             <Style>
+                                              <Border>
+                                                <Style>None</Style>
+                                              </Border>
                                               <FontFamily>Segoe UI</FontFamily>
                                               <VerticalAlign>Bottom</VerticalAlign>
                                               <PaddingRight>5pt</PaddingRight>
@@ -278,7 +284,7 @@
                                             <rd:DefaultName>LineDisc_SalesLineCaption_1</rd:DefaultName>
                                             <ZIndex>155</ZIndex>
                                             <Visibility>
-                                              <Hidden>=Fields!HideDiscCaption.Value=1</Hidden>
+                                              <Hidden>true</Hidden>
                                             </Visibility>
                                             <Style>
                                               <Border>
@@ -316,7 +322,13 @@
                                             </Paragraphs>
                                             <rd:DefaultName>AmountCaption</rd:DefaultName>
                                             <ZIndex>152</ZIndex>
+                                            <Visibility>
+                                              <Hidden>true</Hidden>
+                                            </Visibility>
                                             <Style>
+                                              <Border>
+                                                <Style>None</Style>
+                                              </Border>
                                               <FontFamily>Segoe UI</FontFamily>
                                               <VerticalAlign>Bottom</VerticalAlign>
                                               <PaddingRight>5pt</PaddingRight>
@@ -483,7 +495,13 @@
                                             </Paragraphs>
                                             <rd:DefaultName>UnitPriceCaption</rd:DefaultName>
                                             <ZIndex>156</ZIndex>
+                                            <Visibility>
+                                              <Hidden>true</Hidden>
+                                            </Visibility>
                                             <Style>
+                                              <Border>
+                                                <Style>None</Style>
+                                              </Border>
                                               <FontFamily>Segoe UI</FontFamily>
                                               <VerticalAlign>Bottom</VerticalAlign>
                                               <PaddingRight>5pt</PaddingRight>
@@ -517,7 +535,7 @@
                                             <rd:DefaultName>LineDisc_SalesLineCaption_1</rd:DefaultName>
                                             <ZIndex>155</ZIndex>
                                             <Visibility>
-                                              <Hidden>=Fields!HideDiscCaption.Value = 1</Hidden>
+                                              <Hidden>true</Hidden>
                                             </Visibility>
                                             <Style>
                                               <Border>
@@ -555,7 +573,13 @@
                                             </Paragraphs>
                                             <rd:DefaultName>AmountCaption</rd:DefaultName>
                                             <ZIndex>152</ZIndex>
+                                            <Visibility>
+                                              <Hidden>true</Hidden>
+                                            </Visibility>
                                             <Style>
+                                              <Border>
+                                                <Style>None</Style>
+                                              </Border>
                                               <FontFamily>Segoe UI</FontFamily>
                                               <VerticalAlign>Bottom</VerticalAlign>
                                               <PaddingRight>5pt</PaddingRight>
@@ -1329,7 +1353,13 @@
                                             </Paragraphs>
                                             <rd:DefaultName>UnitPrice_SalesLine</rd:DefaultName>
                                             <ZIndex>130</ZIndex>
+                                            <Visibility>
+                                              <Hidden>true</Hidden>
+                                            </Visibility>
                                             <Style>
+                                              <Border>
+                                                <Style>None</Style>
+                                              </Border>
                                               <FontFamily>Segoe UI</FontFamily>
                                               <VerticalAlign>Top</VerticalAlign>
                                               <PaddingRight>5pt</PaddingRight>
@@ -1362,7 +1392,13 @@
                                             </Paragraphs>
                                             <rd:DefaultName>LineDisc_SalesLine</rd:DefaultName>
                                             <ZIndex>129</ZIndex>
+                                            <Visibility>
+                                              <Hidden>true</Hidden>
+                                            </Visibility>
                                             <Style>
+                                              <Border>
+                                                <Style>None</Style>
+                                              </Border>
                                               <FontFamily>Segoe UI</FontFamily>
                                               <VerticalAlign>Top</VerticalAlign>
                                               <PaddingRight>5pt</PaddingRight>
@@ -1395,7 +1431,13 @@
                                             </Paragraphs>
                                             <rd:DefaultName>LineAmt_SalesLine</rd:DefaultName>
                                             <ZIndex>126</ZIndex>
+                                            <Visibility>
+                                              <Hidden>true</Hidden>
+                                            </Visibility>
                                             <Style>
+                                              <Border>
+                                                <Style>None</Style>
+                                              </Border>
                                               <FontFamily>Segoe UI</FontFamily>
                                               <VerticalAlign>Top</VerticalAlign>
                                               <PaddingRight>5pt</PaddingRight>
@@ -2474,6 +2516,9 @@
                                             </Paragraphs>
                                             <rd:DefaultName>UnitPrice_SalesLine</rd:DefaultName>
                                             <ZIndex>130</ZIndex>
+                                            <Visibility>
+                                              <Hidden>true</Hidden>
+                                            </Visibility>
                                             <Style>
                                               <Border>
                                                 <Style>None</Style>
@@ -2510,6 +2555,9 @@
                                             </Paragraphs>
                                             <rd:DefaultName>LineDisc_SalesLine</rd:DefaultName>
                                             <ZIndex>129</ZIndex>
+                                            <Visibility>
+                                              <Hidden>true</Hidden>
+                                            </Visibility>
                                             <Style>
                                               <Border>
                                                 <Style>None</Style>
@@ -2546,6 +2594,9 @@
                                             </Paragraphs>
                                             <rd:DefaultName>LineAmt_SalesLine</rd:DefaultName>
                                             <ZIndex>126</ZIndex>
+                                            <Visibility>
+                                              <Hidden>true</Hidden>
+                                            </Visibility>
                                             <Style>
                                               <Border>
                                                 <Style>None</Style>
@@ -3122,21 +3173,9 @@
                                   <TablixMember />
                                   <TablixMember />
                                   <TablixMember />
-                                  <TablixMember>
-                                    <Visibility>
-                                      <Hidden>true</Hidden>
-                                    </Visibility>
-                                  </TablixMember>
-                                  <TablixMember>
-                                    <Visibility>
-                                      <Hidden>true</Hidden>
-                                    </Visibility>
-                                  </TablixMember>
-                                  <TablixMember>
-                                    <Visibility>
-                                      <Hidden>true</Hidden>
-                                    </Visibility>
-                                  </TablixMember>
+                                  <TablixMember />
+                                  <TablixMember />
+                                  <TablixMember />
                                 </TablixMembers>
                               </TablixColumnHierarchy>
                               <TablixRowHierarchy>
@@ -3289,7 +3328,7 @@
                                   </FilterValues>
                                 </Filter>
                               </Filters>
-                              <Top>1.53987cm</Top>
+                              <Top>1.56104cm</Top>
                               <Height>6.8545cm</Height>
                               <Width>7.80334in</Width>
                               <Style>
@@ -3624,9 +3663,6 @@ Cstr(Fields!ParamValue15.Value)
                                               </Paragraph>
                                             </Paragraphs>
                                             <rd:DefaultName>WorkDescriptionLine</rd:DefaultName>
-                                            <Visibility>
-                                              <Hidden>true</Hidden>
-                                            </Visibility>
                                             <Style>
                                               <Border>
                                                 <Color>LightGrey</Color>
@@ -3860,7 +3896,7 @@ Cstr(Fields!ParamValue15.Value)
             </Style>
           </Tablix>
         </ReportItems>
-        <Height>10.75421cm</Height>
+        <Height>10.56004cm</Height>
         <Style>
           <FontFamily>Segoe UI</FontFamily>
         </Style>
@@ -3868,7 +3904,7 @@ Cstr(Fields!ParamValue15.Value)
       <Width>20.04211cm</Width>
       <Page>
         <PageHeader>
-          <Height>13.78587cm</Height>
+          <Height>14.0202cm</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
@@ -4207,6 +4243,7 @@ Cstr(Fields!ParamValue15.Value)
                       </Style>
                     </Paragraph>
                   </Paragraphs>
+                  <Left>0.09663cm</Left>
                   <Height>0.25in</Height>
                   <Width>8.40427cm</Width>
                   <Style>
@@ -4238,6 +4275,7 @@ Cstr(Fields!ParamValue15.Value)
                     </Paragraph>
                   </Paragraphs>
                   <Top>0.73063cm</Top>
+                  <Left>0.09663cm</Left>
                   <Height>12pt</Height>
                   <Width>1.36445in</Width>
                   <ZIndex>1</ZIndex>
@@ -4269,7 +4307,7 @@ Code.GetData(1,3))</Value>
                     </Paragraph>
                   </Paragraphs>
                   <Top>0.73063cm</Top>
-                  <Left>3.53625cm</Left>
+                  <Left>3.63288cm</Left>
                   <Height>12pt</Height>
                   <Width>4.86802cm</Width>
                   <ZIndex>2</ZIndex>
@@ -4302,6 +4340,7 @@ Code.GetData(1,3))</Value>
                     </Paragraph>
                   </Paragraphs>
                   <Top>2.42396cm</Top>
+                  <Left>0.09663cm</Left>
                   <Height>12pt</Height>
                   <Width>3.4657cm</Width>
                   <ZIndex>3</ZIndex>
@@ -4333,7 +4372,7 @@ Code.GetData(5,3))</Value>
                     </Paragraph>
                   </Paragraphs>
                   <Top>2.42396cm</Top>
-                  <Left>3.53625cm</Left>
+                  <Left>3.63288cm</Left>
                   <Height>12pt</Height>
                   <Width>4.86802cm</Width>
                   <ZIndex>4</ZIndex>
@@ -4365,6 +4404,7 @@ Code.GetData(5,3))</Value>
                     </Paragraph>
                   </Paragraphs>
                   <Top>0.62098in</Top>
+                  <Left>0.09663cm</Left>
                   <Height>12pt</Height>
                   <Width>3.4657cm</Width>
                   <ZIndex>5</ZIndex>
@@ -4399,7 +4439,7 @@ Code.GetData(3,3))</Value>
                     </Paragraph>
                   </Paragraphs>
                   <Top>0.62098in</Top>
-                  <Left>3.53625cm</Left>
+                  <Left>3.63288cm</Left>
                   <Height>12pt</Height>
                   <Width>4.86802cm</Width>
                   <ZIndex>6</ZIndex>
@@ -4431,7 +4471,7 @@ Code.GetData(4,3))</Value>
                     </Paragraph>
                   </Paragraphs>
                   <Top>2.00063cm</Top>
-                  <Left>3.53625cm</Left>
+                  <Left>3.63288cm</Left>
                   <Height>12pt</Height>
                   <Width>4.86802cm</Width>
                   <ZIndex>7</ZIndex>
@@ -4463,6 +4503,7 @@ Code.GetData(4,3))</Value>
                     </Paragraph>
                   </Paragraphs>
                   <Top>0.78765in</Top>
+                  <Left>0.09663cm</Left>
                   <Height>12pt</Height>
                   <Width>3.4657cm</Width>
                   <ZIndex>8</ZIndex>
@@ -4493,6 +4534,7 @@ Code.GetData(4,3))</Value>
                     </Paragraph>
                   </Paragraphs>
                   <Top>0.45432in</Top>
+                  <Left>0.09663cm</Left>
                   <Height>12pt</Height>
                   <Width>3.4657cm</Width>
                   <ZIndex>9</ZIndex>
@@ -4526,7 +4568,7 @@ Code.GetData(2,3))</Value>
                     </Paragraph>
                   </Paragraphs>
                   <Top>1.15396cm</Top>
-                  <Left>3.53625cm</Left>
+                  <Left>3.63288cm</Left>
                   <Height>12pt</Height>
                   <Width>4.86802cm</Width>
                   <ZIndex>10</ZIndex>
@@ -4561,7 +4603,7 @@ Code.GetData(8,3))</Value>
                     </Paragraph>
                   </Paragraphs>
                   <Top>3.69396cm</Top>
-                  <Left>3.53625cm</Left>
+                  <Left>3.63288cm</Left>
                   <Height>12pt</Height>
                   <Width>4.86802cm</Width>
                   <ZIndex>11</ZIndex>
@@ -4593,6 +4635,7 @@ Code.GetData(8,3))</Value>
                     </Paragraph>
                   </Paragraphs>
                   <Top>1.45432in</Top>
+                  <Left>0.09663cm</Left>
                   <Height>12pt</Height>
                   <Width>3.4657cm</Width>
                   <ZIndex>12</ZIndex>
@@ -4623,6 +4666,7 @@ Code.GetData(8,3))</Value>
                     </Paragraph>
                   </Paragraphs>
                   <Top>1.12098in</Top>
+                  <Left>0.09663cm</Left>
                   <Height>12pt</Height>
                   <Width>3.4657cm</Width>
                   <ZIndex>13</ZIndex>
@@ -4656,7 +4700,7 @@ Code.GetData(6,3))</Value>
                     </Paragraph>
                   </Paragraphs>
                   <Top>2.8473cm</Top>
-                  <Left>3.53625cm</Left>
+                  <Left>3.63288cm</Left>
                   <Height>12pt</Height>
                   <Width>4.86802cm</Width>
                   <ZIndex>14</ZIndex>
@@ -4688,8 +4732,8 @@ Code.GetData(6,3))</Value>
                     </Paragraph>
                   </Paragraphs>
                   <rd:DefaultName>Textbox1</rd:DefaultName>
-                  <Top>1.81266in</Top>
-                  <Left>0in</Left>
+                  <Top>1.83766in</Top>
+                  <Left>0.03804in</Left>
                   <Height>12pt</Height>
                   <Width>1.36445in</Width>
                   <ZIndex>15</ZIndex>
@@ -4722,8 +4766,8 @@ Code.GetData(9,3))</Value>
                     </Paragraph>
                   </Paragraphs>
                   <rd:DefaultName>Textbox1</rd:DefaultName>
-                  <Top>1.81265in</Top>
-                  <Left>1.39223in</Left>
+                  <Top>1.83765in</Top>
+                  <Left>1.43027in</Left>
                   <Height>12pt</Height>
                   <Width>1.91654in</Width>
                   <ZIndex>16</ZIndex>
@@ -4757,7 +4801,7 @@ Code.GetData(7,3))</Value>
                   </Paragraphs>
                   <rd:DefaultName>Textbox4</rd:DefaultName>
                   <Top>1.28765in</Top>
-                  <Left>1.39223in</Left>
+                  <Left>1.43027in</Left>
                   <Height>12pt</Height>
                   <Width>1.91654in</Width>
                   <ZIndex>17</ZIndex>
@@ -4788,7 +4832,7 @@ Code.GetData(7,3))</Value>
                   </Paragraphs>
                   <rd:DefaultName>Textbox69</rd:DefaultName>
                   <Top>1.28765in</Top>
-                  <Left>0in</Left>
+                  <Left>0.03804in</Left>
                   <Height>0.16667in</Height>
                   <Width>1.36445in</Width>
                   <ZIndex>18</ZIndex>
@@ -4819,8 +4863,8 @@ Code.GetData(7,3))</Value>
                     </Paragraph>
                   </Paragraphs>
                   <rd:DefaultName>Textbox3</rd:DefaultName>
-                  <Top>5.02747cm</Top>
-                  <Left>0.00001cm</Left>
+                  <Top>5.09097cm</Top>
+                  <Left>0.09663cm</Left>
                   <Height>0.42333cm</Height>
                   <Width>3.4657cm</Width>
                   <ZIndex>19</ZIndex>
@@ -4851,8 +4895,8 @@ Code.GetData(7,3))</Value>
                     </Paragraph>
                   </Paragraphs>
                   <rd:DefaultName>Textbox3</rd:DefaultName>
-                  <Top>5.4508cm</Top>
-                  <Left>0.00001cm</Left>
+                  <Top>5.5143cm</Top>
+                  <Left>0.09663cm</Left>
                   <Height>0.42333cm</Height>
                   <Width>3.4657cm</Width>
                   <ZIndex>20</ZIndex>
@@ -4883,8 +4927,8 @@ Code.GetData(7,3))</Value>
                     </Paragraph>
                   </Paragraphs>
                   <rd:DefaultName>Textbox3</rd:DefaultName>
-                  <Top>5.02746cm</Top>
-                  <Left>3.53626cm</Left>
+                  <Top>5.09096cm</Top>
+                  <Left>3.63288cm</Left>
                   <Height>0.42333cm</Height>
                   <Width>4.86802cm</Width>
                   <ZIndex>21</ZIndex>
@@ -4915,8 +4959,8 @@ Code.GetData(7,3))</Value>
                     </Paragraph>
                   </Paragraphs>
                   <rd:DefaultName>Textbox3</rd:DefaultName>
-                  <Top>5.45079cm</Top>
-                  <Left>3.53626cm</Left>
+                  <Top>5.51429cm</Top>
+                  <Left>3.63288cm</Left>
                   <Height>0.42333cm</Height>
                   <Width>4.86802cm</Width>
                   <ZIndex>22</ZIndex>
@@ -4946,8 +4990,8 @@ Code.GetData(7,3))</Value>
                     </Paragraph>
                   </Paragraphs>
                   <rd:DefaultName>Textbox16</rd:DefaultName>
-                  <Top>5.87413cm</Top>
-                  <Left>0.00001cm</Left>
+                  <Top>5.93763cm</Top>
+                  <Left>0.09663cm</Left>
                   <Height>0.42333cm</Height>
                   <Width>3.4657cm</Width>
                   <ZIndex>23</ZIndex>
@@ -4977,8 +5021,8 @@ Code.GetData(7,3))</Value>
                     </Paragraph>
                   </Paragraphs>
                   <rd:DefaultName>Textbox16</rd:DefaultName>
-                  <Top>5.87413cm</Top>
-                  <Left>3.53626cm</Left>
+                  <Top>5.93763cm</Top>
+                  <Left>3.63288cm</Left>
                   <Height>0.42333cm</Height>
                   <Width>4.86802cm</Width>
                   <ZIndex>24</ZIndex>
@@ -5008,10 +5052,10 @@ Code.GetData(7,3))</Value>
                     </Paragraph>
                   </Paragraphs>
                   <rd:DefaultName>Textbox16</rd:DefaultName>
-                  <Top>4.11824cm</Top>
-                  <Left>0.00002cm</Left>
+                  <Top>4.15353cm</Top>
+                  <Left>0.09663cm</Left>
                   <Height>0.45766cm</Height>
-                  <Width>3.46568cm</Width>
+                  <Width>3.4657cm</Width>
                   <ZIndex>25</ZIndex>
                   <Style>
                     <Border>
@@ -5039,8 +5083,8 @@ Code.GetData(7,3))</Value>
                     </Paragraph>
                   </Paragraphs>
                   <rd:DefaultName>Textbox16</rd:DefaultName>
-                  <Top>4.15257cm</Top>
-                  <Left>3.53627cm</Left>
+                  <Top>4.18786cm</Top>
+                  <Left>3.63288cm</Left>
                   <Height>0.42333cm</Height>
                   <Width>4.86802cm</Width>
                   <ZIndex>26</ZIndex>
@@ -5054,9 +5098,9 @@ Code.GetData(7,3))</Value>
               </ReportItems>
               <KeepTogether>true</KeepTogether>
               <Top>3.50741cm</Top>
-              <Left>11.44179cm</Left>
-              <Height>6.69731cm</Height>
-              <Width>8.55637cm</Width>
+              <Left>11.34516cm</Left>
+              <Height>6.67615cm</Height>
+              <Width>8.653cm</Width>
               <ZIndex>2</ZIndex>
               <Style>
                 <Border>
@@ -5519,10 +5563,10 @@ Code.GetData(7,3))</Value>
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>12.70365cm</Top>
-              <Left>3.22127cm</Left>
+              <Top>12.73893cm</Top>
+              <Left>3.25221cm</Left>
               <Height>11.5pt</Height>
-              <Width>5.5097cm</Width>
+              <Width>5.47876cm</Width>
               <ZIndex>16</ZIndex>
               <Visibility>
                 <Hidden>=First(Fields!Trykfarve1.Value, "DataSet_Result")=""</Hidden>
@@ -5869,9 +5913,10 @@ Code.GetData(7,3))</Value>
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>12.70365cm</Top>
+              <Top>12.73893cm</Top>
+              <Left>0.03094cm</Left>
               <Height>11.5pt</Height>
-              <Width>3.05667cm</Width>
+              <Width>3.02573cm</Width>
               <ZIndex>26</ZIndex>
               <Visibility>
                 <Hidden>=First(Fields!Trykfarve1.Value, "DataSet_Result")=""</Hidden>
@@ -6043,10 +6088,10 @@ Code.GetData(7,3))</Value>
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>12.70365cm</Top>
-              <Left>14.97805cm</Left>
+              <Top>12.73893cm</Top>
+              <Left>14.97804cm</Left>
               <Height>11.5pt</Height>
-              <Width>4.96014cm</Width>
+              <Width>4.86802cm</Width>
               <ZIndex>31</ZIndex>
               <Visibility>
                 <Hidden>=First(Fields!AfrulningsRetning.Value, "DataSet_Result")=""</Hidden>
@@ -6078,48 +6123,13 @@ Code.GetData(7,3))</Value>
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>12.70365cm</Top>
-              <Left>11.4418cm</Left>
+              <Top>12.73893cm</Top>
+              <Left>11.44179cm</Left>
               <Height>11.5pt</Height>
-              <Width>3.55782cm</Width>
+              <Width>3.4657cm</Width>
               <ZIndex>32</ZIndex>
               <Visibility>
                 <Hidden>=First(Fields!AfrulningsRetning.Value, "DataSet_Result")=" "</Hidden>
-              </Visibility>
-              <Style>
-                <Border>
-                  <Style>None</Style>
-                </Border>
-                <VerticalAlign>Middle</VerticalAlign>
-              </Style>
-            </Textbox>
-            <Textbox Name="ShipToAddr30">
-              <CanGrow>true</CanGrow>
-              <CanShrink>true</CanShrink>
-              <KeepTogether>true</KeepTogether>
-              <Paragraphs>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>="Ref: " + First(Fields!ShipToContact.Value, "DataSet_Result")</Value>
-                      <Style>
-                        <FontStyle>Normal</FontStyle>
-                        <FontFamily>Segoe UI</FontFamily>
-                      </Style>
-                    </TextRun>
-                  </TextRuns>
-                  <Style>
-                    <TextAlign>Left</TextAlign>
-                  </Style>
-                </Paragraph>
-              </Paragraphs>
-              <Top>9.53065cm</Top>
-              <Left>0.09582cm</Left>
-              <Height>11.5pt</Height>
-              <Width>8.65606cm</Width>
-              <ZIndex>33</ZIndex>
-              <Visibility>
-                <Hidden>= First(Fields!ShipToContact.Value, "DataSet_Result") = ""</Hidden>
               </Visibility>
               <Style>
                 <Border>
@@ -6160,7 +6170,7 @@ Code.GetData(7,3))</Value>
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox5</rd:DefaultName>
-              <Top>0.20161in</Top>
+              <Top>0.32661in</Top>
               <Left>0.01865in</Left>
               <Height>12pt</Height>
               <Width>7.85464in</Width>
@@ -6194,7 +6204,7 @@ Code.GetData(7,3))</Value>
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox5</rd:DefaultName>
-              <Top>0.38217in</Top>
+              <Top>0.50717in</Top>
               <Left>0.01865in</Left>
               <Height>12pt</Height>
               <Width>7.85464in</Width>
@@ -6228,7 +6238,7 @@ Code.GetData(7,3))</Value>
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox5</rd:DefaultName>
-              <Top>0.54883in</Top>
+              <Top>0.67383in</Top>
               <Left>0.01865in</Left>
               <Height>12pt</Height>
               <Width>7.85464in</Width>

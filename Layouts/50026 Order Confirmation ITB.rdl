@@ -4159,7 +4159,7 @@ Cstr(Fields!ParamValue15.Value)
                 </Textbox>
               </ReportItems>
               <KeepTogether>true</KeepTogether>
-              <Top>2.97736cm</Top>
+              <Top>2.02486cm</Top>
               <Left>0.07491cm</Left>
               <Height>1.38175in</Height>
               <Width>3.45626in</Width>
@@ -5066,7 +5066,7 @@ Code.GetData(9,3))</Value>
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>7.11412cm</Top>
+              <Top>6.16162cm</Top>
               <Left>0.07491cm</Left>
               <Height>12pt</Height>
               <Width>8.65606cm</Width>
@@ -5101,7 +5101,7 @@ Code.GetData(9,3))</Value>
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>7.53745cm</Top>
+              <Top>6.58495cm</Top>
               <Left>0.07491cm</Left>
               <Height>11.5pt</Height>
               <Width>8.65606cm</Width>
@@ -5133,7 +5133,7 @@ Code.GetData(9,3))</Value>
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>7.94315cm</Top>
+              <Top>6.99065cm</Top>
               <Left>0.07491cm</Left>
               <Height>11.5pt</Height>
               <Width>8.65606cm</Width>
@@ -5165,7 +5165,7 @@ Code.GetData(9,3))</Value>
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>8.34884cm</Top>
+              <Top>7.39634cm</Top>
               <Left>0.07491cm</Left>
               <Height>11.5pt</Height>
               <Width>8.65606cm</Width>
@@ -5197,7 +5197,7 @@ Code.GetData(9,3))</Value>
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>8.75454cm</Top>
+              <Top>7.80204cm</Top>
               <Left>0.07491cm</Left>
               <Height>11.5pt</Height>
               <Width>8.65606cm</Width>
@@ -5229,7 +5229,7 @@ Code.GetData(9,3))</Value>
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>9.16023cm</Top>
+              <Top>8.20773cm</Top>
               <Left>0.07491cm</Left>
               <Height>11.5pt</Height>
               <Width>8.65606cm</Width>
@@ -5261,7 +5261,7 @@ Code.GetData(9,3))</Value>
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>9.56593cm</Top>
+              <Top>8.61343cm</Top>
               <Left>0.07491cm</Left>
               <Height>11.5pt</Height>
               <Width>8.65606cm</Width>
@@ -5293,7 +5293,7 @@ Code.GetData(9,3))</Value>
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>9.97162cm</Top>
+              <Top>9.01912cm</Top>
               <Left>0.07491cm</Left>
               <Height>11.5pt</Height>
               <Width>8.65606cm</Width>
@@ -6066,6 +6066,41 @@ Code.GetData(9,3))</Value>
               <ZIndex>32</ZIndex>
               <Visibility>
                 <Hidden>=First(Fields!AfrulningsRetning.Value, "DataSet_Result")=" "</Hidden>
+              </Visibility>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <VerticalAlign>Middle</VerticalAlign>
+              </Style>
+            </Textbox>
+            <Textbox Name="ShipToAddr30">
+              <CanGrow>true</CanGrow>
+              <CanShrink>true</CanShrink>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>="Ref: " + First(Fields!ShipToContact.Value, "DataSet_Result")</Value>
+                      <Style>
+                        <FontStyle>Normal</FontStyle>
+                        <FontFamily>Segoe UI</FontFamily>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>9.6012cm</Top>
+              <Left>0.07491cm</Left>
+              <Height>11.5pt</Height>
+              <Width>8.65606cm</Width>
+              <ZIndex>33</ZIndex>
+              <Visibility>
+                <Hidden>= First(Fields!ShipToContact.Value, "DataSet_Result") = ""</Hidden>
               </Visibility>
               <Style>
                 <Border>
@@ -6944,6 +6979,9 @@ End Function
         </Field>
         <Field Name="AfrulLbl">
           <DataField>AfrulLbl</DataField>
+        </Field>
+        <Field Name="ShipToContact">
+          <DataField>ShipToContact</DataField>
         </Field>
         <Field Name="CompanyInfo2Picture">
           <DataField>CompanyInfo2Picture</DataField>

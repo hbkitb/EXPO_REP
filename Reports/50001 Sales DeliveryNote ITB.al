@@ -341,6 +341,10 @@ report 50001 "Sales DeliveryNote ITB"
             column(LevUgeLbl; LevUgeLbl)
             {
             }
+            //170522
+            column(ShipToContact; "Sales Header"."Ship-to Contact")
+            {
+            }
 
 
 

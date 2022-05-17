@@ -341,6 +341,10 @@ report 50000 "Sales PackingNote ITB"
             column(LevUgeLbl; LevUgeLbl)
             {
             }
+            //170522
+            column(ShipToContact; "Sales Header"."Ship-to Contact")
+            {
+            }
 
 
             dataitem(CopyLoop; Integer)

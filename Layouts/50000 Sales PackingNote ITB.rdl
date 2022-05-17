@@ -6138,6 +6138,41 @@ Code.GetData(7,3))</Value>
                 <VerticalAlign>Middle</VerticalAlign>
               </Style>
             </Textbox>
+            <Textbox Name="ShipToAddr30">
+              <CanGrow>true</CanGrow>
+              <CanShrink>true</CanShrink>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>= "Ref: " + First(Fields!ShipToContact.Value, "DataSet_Result")</Value>
+                      <Style>
+                        <FontStyle>Normal</FontStyle>
+                        <FontFamily>Segoe UI</FontFamily>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>9.6012cm</Top>
+              <Left>0.07491cm</Left>
+              <Height>11.5pt</Height>
+              <Width>8.65606cm</Width>
+              <ZIndex>33</ZIndex>
+              <Visibility>
+                <Hidden>=First(Fields!ShipToContact.Value, "DataSet_Result") = ""</Hidden>
+              </Visibility>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <VerticalAlign>Middle</VerticalAlign>
+              </Style>
+            </Textbox>
           </ReportItems>
           <Style>
             <Border>
@@ -6699,6 +6734,9 @@ End Function
         </Field>
         <Field Name="LevUgeLbl">
           <DataField>LevUgeLbl</DataField>
+        </Field>
+        <Field Name="ShipToContact">
+          <DataField>ShipToContact</DataField>
         </Field>
         <Field Name="CompanyInfo2Picture">
           <DataField>CompanyInfo2Picture</DataField>

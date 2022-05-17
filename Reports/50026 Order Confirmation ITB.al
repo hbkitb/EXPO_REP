@@ -339,6 +339,10 @@ report 50026 "Order Confirmation ITB"
             {
 
             }
+            //170522
+            column(ShipToContact; "Sales Header"."Ship-to Contact")
+            {
+            }
 
 
             dataitem(CopyLoop; Integer)
