@@ -1011,7 +1011,7 @@ report 50002 "Sales_Samle_Pack ITB"
                                 TotalNetWeight := TotalNetWeight + WeightLine;
                                 TotalGrossWeight := TotalNetWeight + (PallerIalt * 12);
 
-                                //070721                           
+                                //070721                        
 
                                 ParamIdx := 15;
                                 ParamText[ParamIdx] := 'VendorItemNo';
