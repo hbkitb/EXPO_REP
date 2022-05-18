@@ -379,7 +379,7 @@ report 50031 "SalesOrder_Card_ITB"
         Counter1: Integer;
         CurrencyCode2: Code[10];
         PageGroupNo: Integer;
-        CustOrderDetailCaptionLbl: Label 'Customer - Order Detail';
+        CustOrderDetailCaptionLbl: Label 'OrdreKort';
         PageCaptionLbl: Label 'Page';
         AllAmtAreInLCYCaptionLbl: Label 'All amounts are in LCY';
         ShipmentDateCaptionLbl: Label 'Shipment Date';
