@@ -1396,11 +1396,12 @@ report 50020 "Sales - Invoice ITB"
                             END;
 
                             IF ExtendedTextLine.FINDSET THEN
-                                if ShowExtLines = true then  //hbk/ITB-290322
+                                //if ShowExtLines = true then  //hbk/ITB-290322
                                     REPEAT
-                                        MessageLines := ExtendedTextLine;
+                                        if (CopyStr(ExtendedTextLine.Text, 1, 1) <> '*') or (ShowExtLines = true) then
+                                            MessageLines := ExtendedTextLine;
                                         MessageLines.INSERT;
-                                    UNTIL ExtendedTextLine.NEXT = 0;
+                                UNTIL ExtendedTextLine.NEXT = 0;
 
                             IF ParamShowWeight <> ParamShowWeight::No THEN BEGIN
                                 MessageLines."Table Name" := MessageLines."Table Name"::"Standard Text";
