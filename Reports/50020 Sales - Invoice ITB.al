@@ -1395,13 +1395,18 @@ report 50020 "Sales - Invoice ITB"
                                 ExtendedTextLine.SETRANGE(ExtendedTextLine."Language Code", '');             // General
                             END;
 
-                            IF ExtendedTextLine.FINDSET THEN
+                            IF ExtendedTextLine.FINDSET THEN begin
                                 //if ShowExtLines = true then  //hbk/ITB-290322
-                                    REPEAT
-                                        if (CopyStr(ExtendedTextLine.Text, 1, 1) <> '*') or (ShowExtLines = true) then
-                                            MessageLines := ExtendedTextLine;
+                                REPEAT
+                                    if (CopyStr(ExtendedTextLine.Text, 1, 1) <> '*') or (ShowExtLines = true) then begin
+                                        MessageLines := ExtendedTextLine;
+                                        if CopyStr(ExtendedTextLine.Text, 1, 1) = '*' then
+                                            MessageLines.Text := CopyStr(ExtendedTextLine.Text, 2, 100);
                                         MessageLines.INSERT;
+                                    end;
+                                //end;
                                 UNTIL ExtendedTextLine.NEXT = 0;
+                            end;
 
                             IF ParamShowWeight <> ParamShowWeight::No THEN BEGIN
                                 MessageLines."Table Name" := MessageLines."Table Name"::"Standard Text";
