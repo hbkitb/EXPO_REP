@@ -33,6 +33,7 @@ pageextension 50008 OrderList_REP_Ext extends "Sales Order List"
                     LineNo: integer;
                     Pick: Report "Sales_Samle_Pack ITB";    //"Pick Instruction";  //"Standard Sales - Order Conf.";
                     SalNum: Code[20];
+                    ItemVar: Record Item;  //300522
 
                 begin
                     //her
@@ -58,15 +59,25 @@ pageextension 50008 OrderList_REP_Ext extends "Sales Order List"
                             Hline.SetRange("Document No.", head."No.");
                             if Hline.FindSet then
                                 repeat
-                                    TempSalesLine.reset;
-                                    TempSalesLine.Init;
-                                    TempSalesLine := Hline;
-                                    TempSalesLine."Document No." := SalNum;
-                                    TempSalesLine."Line No." := LineNo;
-                                    TempSalesLine.LineReference := head."External Document No.";  //160522
-                                    TempSalesLine.Insert;
+                                    //300522
+                                    Clear(ItemVar);
+                                    ItemVar.Reset;
+                                    ItemVar.SetRange("No.", Hline."No.");
+                                    if ItemVar.FindSet then begin
+                                        if ItemVar.Type = ItemVar.Type::Inventory then begin
+                                            //300522
 
-                                    LineNo := LineNo + 10000;
+                                            TempSalesLine.reset;
+                                            TempSalesLine.Init;
+                                            TempSalesLine := Hline;
+                                            TempSalesLine."Document No." := SalNum;
+                                            TempSalesLine."Line No." := LineNo;
+                                            TempSalesLine.LineReference := head."External Document No.";  //160522
+                                            TempSalesLine.Insert;
+
+                                            LineNo := LineNo + 10000;
+                                        end;
+                                    end;
                                 until Hline.Next = 0;
 
                         until head.Next() = 0;
