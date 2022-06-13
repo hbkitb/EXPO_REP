@@ -456,6 +456,12 @@ report 50032 "Standard Sales BRT - Invoice"
             {
             }
             //HBK / ITB <-            
+            column(EmployeePhone; EmployeePhone)
+            {
+            }
+            column(ContactMail; ContactMail)
+            {
+            }
             dataitem(Line; "Sales Invoice Line")
             {
                 DataItemLink = "Document No." = FIELD("No.");
@@ -1266,8 +1272,16 @@ report 50032 "Standard Sales BRT - Invoice"
         UserName := UserId;  //HBK / ITB - 030522
         MailUser.Reset();
         MailUser.SetRange("User Name", UserName);
-        if MailUser.FindSet then
+        if MailUser.FindSet then begin
             UserName := MailUser."Full Name";
+            ContactMail := MailUser."Contact Email";
+
+            PhoneUser.Reset();
+            PhoneUser.SetRange("No.", MailUser."User Name");
+            if PhoneUser.FindSet then
+                EmployeePhone := PhoneUser."Phone No.";
+
+        end;
     end;
 
     var
@@ -1405,7 +1419,10 @@ report 50032 "Standard Sales BRT - Invoice"
         CurrCode: Text[10];
         CurrSymbol: Text[10];
         UserName: Text[50]; //HBK / ITB - 030522
-        MailUser: Record User; //HBK / ITB - 040522        
+        MailUser: Record User; //HBK / ITB - 040522
+        ContactMail: Text[100];  //HBK / ITB - 130622    
+        PhoneUser: Record Employee;  //HBK / ITB - 130622
+        EmployeePhone: Text[30];
 
     local procedure InitLogInteraction()
     begin
