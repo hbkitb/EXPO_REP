@@ -1214,7 +1214,8 @@ report 50000 "Sales PackingNote ITB"
                         trigger OnPreDataItem()
                         begin
 
-                            MessageNo := '50026';
+                            //MessageNo := '50026';
+                            MessageNo := '50000';  //160622
                             MessageLanguage := "Sales Header"."Language Code";
 
                             CLEAR(MessageLines);

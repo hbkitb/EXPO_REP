@@ -1218,7 +1218,10 @@ report 50001 "Sales DeliveryNote ITB"
                         trigger OnPreDataItem()
                         begin
 
-                            MessageNo := '50026';
+                            //MessageNo := '50026';
+                            MessageNo := '50001'; //160622 - HBK
+
+
                             MessageLanguage := "Sales Header"."Language Code";
 
                             CLEAR(MessageLines);
@@ -1237,6 +1240,7 @@ report 50001 "Sales DeliveryNote ITB"
                                 MessageLines.SETRANGE(MessageLines."No.", MessageNo);
                                 MessageLines.SETRANGE(MessageLines."Language Code", '');             // General
                             END;
+
 
                         end;
                     }
