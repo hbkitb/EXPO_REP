@@ -1260,7 +1260,8 @@ report 50002 "Sales_Samle_Pack ITB"
                         trigger OnPreDataItem()
                         begin
 
-                            MessageNo := '50026';
+                            //MessageNo := '50026';
+                            MessageNo := '50000';  //160622 -
                             MessageLanguage := "Sales Header"."Language Code";
 
                             CLEAR(MessageLines);
