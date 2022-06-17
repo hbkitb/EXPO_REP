@@ -153,11 +153,30 @@ report 50031 "SalesOrder_Card_ITB"
                 {
                     //IncludeCaption = true;
                 }
-                column(YourRef; salesheader."your reference")
+                column(YourRef; SalesHeader."Your Reference")
                 {
                     //IncludeCaption = true;
                 }
-
+                column(DlvName; salesheader."Ship-to Name")
+                {
+                    //IncludeCaption = true;
+                }
+                column(DlvAddr1; salesheader."Ship-to Address")
+                {
+                    //IncludeCaption = true;
+                }
+                column(DlvAddr2; SalesHeader."Ship-to Address 2")
+                {
+                    //IncludeCaption = true;
+                }
+                column(DlvPost; salesheader."Ship-to Post Code")
+                {
+                    //IncludeCaption = true;
+                }
+                column(DlvCity; salesheader."Ship-to City")
+                {
+                    //IncludeCaption = true;
+                }
 
                 trigger OnAfterGetRecord()
                 begin

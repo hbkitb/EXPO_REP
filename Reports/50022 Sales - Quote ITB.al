@@ -3,7 +3,8 @@ report 50022 "Sales - Quote ITB"
 
 
     DefaultLayout = RDLC;
-    RDLCLayout = './Layouts/50022 Sales - Quote ITB.rdlc';
+    //RDLCLayout = './Layouts/50022 Sales - Quote ITB.rdlc'; 
+    RDLCLayout = './Layouts/50022 Sales - Quote ITB.rdl';
 
     CaptionML = DAN = 'Salg - tilbud',
                 ENU = 'Sales - Quote';
@@ -1319,6 +1320,8 @@ report 50022 "Sales - Quote ITB"
 
         CompanyInfo2.GET;
         CompanyInfo2.CALCFIELDS(Picture);
+
+        ShowShippingAddr := true;  //hbjk/itb - 170622
 
 
     end;
