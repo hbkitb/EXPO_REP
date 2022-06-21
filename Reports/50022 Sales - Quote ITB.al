@@ -221,6 +221,107 @@ report 50022 "Sales - Quote ITB"
             column(DropItemNoColumn; ParamDropItemNoColumn)
             {
             }
+            column(BrtWeight; BrtWeight)
+            {
+            }
+            column(Trykfarve1; Trykfarve1)
+            {
+            }
+            column(Trykfarve2; Trykfarve2)
+            {
+            }
+            column(Trykfarve3; Trykfarve3)
+            {
+            }
+            column(Trykfarve4; Trykfarve4)
+            {
+            }
+            column(KvalFarve; KvalFarve)
+            {
+            }
+            column(TrykLgd; TrykLgd)
+            {
+            }
+            column(KlicheNr; KlicheNr)
+            {
+            }
+            column(Remark; Remark)
+            {
+            }
+            column(Type_; Type_)
+            {
+            }
+            column(AfrulningsRetning; AfrulningsRetning)
+            {
+            }
+            column(Volume; Volume)
+            {
+            }
+            column(Korrektur; Korrektur)
+            {
+            }
+            column(Tegning; Tegning)
+            {
+            }
+            column(Genoptryk; Genoptryk)
+            {
+            }
+            column(NetWeight; NetWeight)
+            {
+            }
+            column(Kartoner; Kartoner)
+            {
+            }
+            column(DelWeek; DelWeek)
+            {
+            }
+            column(KvalFarLbl; KvalFarLbl)
+            {
+            }
+            column(RemarkLbl; RemarkLbl)
+            {
+            }
+            column(Trykf01Lbl; Trykf01Lbl)
+            {
+            }
+            column(Trykf02Lbl; Trykf02Lbl)
+            {
+            }
+            column(Trykf03Lbl; Trykf03Lbl)
+            {
+            }
+            column(Trykf04Lbl; Trykf04Lbl)
+            {
+            }
+            column(GenOpLbl; GenOpLbl)
+            {
+            }
+            column(KorrekLbl; KorrekLbl)
+            {
+            }
+            column(KlicheLbl; KlicheLbl)
+            {
+            }
+            column(TrykLgdLbl; TrykLgdLbl)
+            {
+            }
+            column(BoolNo; BoolNo)
+            {
+            }
+            column(BoolYes; BoolYes)
+            {
+            }
+            column(LevUgeLbl; LevUgeLbl)
+            {
+            }
+            column(AfrulLbl; AfrulLbl)
+            {
+
+            }
+            //210622 - HBK / ITB
+            column(ShipToContact; "Sales Header"."Ship-to Contact")
+            {
+            }
 
             dataitem(CopyLoop; Integer)
             {
@@ -675,6 +776,10 @@ report 50022 "Sales - Quote ITB"
                         }
 
                         trigger OnAfterGetRecord();
+
+                        var
+                            itemvar: Record Item; //070721 - hbk / itb
+
                         begin
                             IF Number = 1 THEN
                                 SalesLine.FIND('-')
@@ -710,10 +815,31 @@ report 50022 "Sales - Quote ITB"
                                 ParamText[ParamIdx] := 'CustomerItemNo';
                                 ParamValue[ParamIdx] := FORMAT(SalesLine."No.");
                                 ReportSelections.GetParam_SalesOrder("Sales Header", ParamIdx, ParamText[ParamIdx], ParamValue[ParamIdx]);
+
+                                /*
                                 IF ParamText[ParamIdx] <> '' THEN BEGIN
                                     TextLineIdx += 1;
                                     TextLine[TextLineIdx] := ParamText[ParamIdx];
                                 END;
+                                */
+
+                                //070721
+                                //IF SalesLine."Cross-Reference No." <> '' then begin
+                                IF SalesLine."Item Reference No." <> '' then begin
+                                    TextLineIdx += 1;
+                                    //TextLine[TextLineIdx] := YourItemLbl + SalesLine."Cross-Reference No.";
+                                    TextLine[TextLineIdx] := YourItemLbl + SalesLine."Item Reference No.";
+                                end;
+                                //070721
+                                StkKrt := 0;
+                                if itemvar.Get(SalesLine."No.") then begin
+                                    If itemvar.StkKrt <> 0 then
+                                        StkKrt := Round((SalesLine.Quantity / itemvar.StkKrt), 1, '>')
+                                    else
+                                        StkKrt := 0;
+                                end;
+
+                                //070721
 
                                 ParamIdx := 15;
                                 ParamText[ParamIdx] := 'VendorItemNo';
@@ -1488,6 +1614,23 @@ report 50022 "Sales - Quote ITB"
 
         VariantCaption: TextConst DAN = 'Variant', DEU = 'Variante', ENU = 'Variant';
 
+        YourItemLbl: TextConst DAN = 'Deres varenr.: ', DEU = 'Ihre Artikel Nr.: ', ENU = 'Your Artikel: ';  //HBK / ITB - 070721
+        sh: Record "Sales Header"; //midler hbk
+        KvalFarLbl: TextConst DAN = 'Kval./Farve', DEU = 'Qual/Farbe', ENU = 'Qual/Colour';  //HBK/ITB
+        RemarkLbl: TextConst DAN = 'Bemærkning', DEU = 'Anmerknung', ENU = 'Comment';
+        Trykf01Lbl: TextConst DAN = 'Trykfarve 1', DEU = 'Druckfarbe 1', ENU = 'Colour 1';  //HBK / ITB
+        Trykf02Lbl: TextConst DAN = 'Trykfarve 2', DEU = 'Druckfarbe 2', ENU = 'Colour 2';  //HBK / ITB
+        Trykf03Lbl: TextConst DAN = 'Trykfarve 3', DEU = 'Druckfarbe 3', ENU = 'Colour 3';  //HBK / ITB
+        Trykf04Lbl: TextConst DAN = 'Trykfarve 4', DEU = 'Druckfarbe 4', ENU = 'Colour 4';  //HBK / ITB
+        GenOpLbl: TextConst DAN = 'Genoptryk', DEU = 'Nachdruck', ENU = 'Reprint';  //HBK / ITB
+        KorrekLbl: TextConst DAN = 'Korrektur', DEU = 'Korrektur', ENU = 'Proof';  //HBK / ITB
+        KlicheLbl: TextConst DAN = 'Kliche', DEU = 'Klichee Nr', ENU = 'Cliche no';  //HBK / ITB
+        TrykLgdLbl: TextConst DAN = 'Tryklængde', DEU = 'Drucklänge', ENU = 'Length';  //HBK / ITB
+        BoolNo: TextConst DAN = 'Nej', DEU = 'Nein', ENU = 'No';  //HBK / ITB
+        BoolYes: TextConst DAN = 'Ja', DEU = 'Ja', ENU = 'Yes';  //HBK / ITB
+        StkKrt: Decimal;  //HBK / ITB - 070721
+        LevUgeLbl: TextConst DAN = 'Afsendes', DEU = 'Versand', ENU = 'Delivery';  //210322
+        AfrulLbl: TextConst DAN = 'Afrulning', DEU = 'Abrollrichtung', ENU = 'Unwind direction';
 
     procedure InitializeRequest(NoOfCopiesFrom: Integer; ShowInternalInfoFrom: Boolean; ArchiveDocumentFrom: Boolean; LogInteractionFrom: Boolean; PrintFrom: Boolean);
     begin
