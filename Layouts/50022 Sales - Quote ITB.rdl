@@ -4533,6 +4533,7 @@ Code.GetData(6,3))</Value>
                     <Border>
                       <Style>None</Style>
                     </Border>
+                    <VerticalAlign>Middle</VerticalAlign>
                   </Style>
                 </Textbox>
                 <Textbox Name="Textbox12">
@@ -4542,7 +4543,7 @@ Code.GetData(6,3))</Value>
                     <Paragraph>
                       <TextRuns>
                         <TextRun>
-                          <Value>=Code.GetData(9,2)</Value>
+                          <Value>=First(Fields!LevUgeLbl.Value, "DataSet_Result")</Value>
                           <Style>
                             <FontStyle>Normal</FontStyle>
                             <FontFamily>Segoe UI</FontFamily>
@@ -4563,6 +4564,7 @@ Code.GetData(6,3))</Value>
                     <Border>
                       <Style>None</Style>
                     </Border>
+                    <VerticalAlign>Middle</VerticalAlign>
                   </Style>
                 </Textbox>
                 <Textbox Name="Textbox13">
@@ -4593,6 +4595,7 @@ Code.GetData(6,3))</Value>
                     <Border>
                       <Style>None</Style>
                     </Border>
+                    <VerticalAlign>Middle</VerticalAlign>
                   </Style>
                 </Textbox>
                 <Textbox Name="Textbox14">
@@ -4623,6 +4626,7 @@ Code.GetData(6,3))</Value>
                     <Border>
                       <Style>None</Style>
                     </Border>
+                    <VerticalAlign>Middle</VerticalAlign>
                   </Style>
                 </Textbox>
                 <Textbox Name="Textbox15">
@@ -4656,6 +4660,7 @@ Code.GetData(7,3))</Value>
                     <Border>
                       <Style>None</Style>
                     </Border>
+                    <VerticalAlign>Middle</VerticalAlign>
                   </Style>
                 </Textbox>
                 <Textbox Name="Textbox16">
@@ -4689,6 +4694,7 @@ Code.GetData(8,3))</Value>
                     <Border>
                       <Style>None</Style>
                     </Border>
+                    <VerticalAlign>Middle</VerticalAlign>
                   </Style>
                 </Textbox>
                 <Textbox Name="Textbox17">
@@ -4698,9 +4704,7 @@ Code.GetData(8,3))</Value>
                     <Paragraph>
                       <TextRuns>
                         <TextRun>
-                          <Value>=IIF(Code.GetData(9,3) = "PageNo",
-Replace(Replace(Code.GetData(76,1), "%1", Globals!PageNumber), "%2", Globals!TotalPages),
-Code.GetData(9,3))</Value>
+                          <Value>=First(Fields!DelWeek.Value, "DataSet_Result")</Value>
                           <Style>
                             <FontStyle>Normal</FontStyle>
                             <FontFamily>Segoe UI</FontFamily>
@@ -4722,6 +4726,7 @@ Code.GetData(9,3))</Value>
                     <Border>
                       <Style>None</Style>
                     </Border>
+                    <VerticalAlign>Middle</VerticalAlign>
                   </Style>
                 </Textbox>
                 <Textbox Name="Textbox18">
@@ -4755,6 +4760,7 @@ Code.GetData(10,3))</Value>
                     <Border>
                       <Style>None</Style>
                     </Border>
+                    <VerticalAlign>Middle</VerticalAlign>
                   </Style>
                 </Textbox>
                 <Textbox Name="Textbox19">
@@ -4788,6 +4794,7 @@ Code.GetData(11,3))</Value>
                     <Border>
                       <Style>None</Style>
                     </Border>
+                    <VerticalAlign>Middle</VerticalAlign>
                   </Style>
                 </Textbox>
                 <Textbox Name="Textbox20">
@@ -4821,6 +4828,7 @@ Code.GetData(12,3))</Value>
                     <Border>
                       <Style>None</Style>
                     </Border>
+                    <VerticalAlign>Middle</VerticalAlign>
                   </Style>
                 </Textbox>
                 <Textbox Name="Textbox21">
@@ -4851,6 +4859,7 @@ Code.GetData(12,3))</Value>
                     <Border>
                       <Style>None</Style>
                     </Border>
+                    <VerticalAlign>Middle</VerticalAlign>
                   </Style>
                 </Textbox>
                 <Textbox Name="Textbox22">
@@ -4881,6 +4890,7 @@ Code.GetData(12,3))</Value>
                     <Border>
                       <Style>None</Style>
                     </Border>
+                    <VerticalAlign>Middle</VerticalAlign>
                   </Style>
                 </Textbox>
               </ReportItems>

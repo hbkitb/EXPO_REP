@@ -1657,7 +1657,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>="LEV. ADR."</Value>
+                                  <Value>="LEV. ADR.                               REF: "  + Fields!ShipContact.Value</Value>
                                   <Style>
                                     <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -1679,6 +1679,7 @@
                           </Style>
                         </Textbox>
                         <ColSpan>3</ColSpan>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell />
@@ -4198,7 +4199,7 @@
             </TablixRowHierarchy>
             <DataSetName>DataSet_Result</DataSetName>
             <Top>0pt</Top>
-            <Height>10.29599cm</Height>
+            <Height>10.296cm</Height>
             <Width>770pt</Width>
             <Style>
               <PaddingRight>0.625in</PaddingRight>
@@ -4812,6 +4813,9 @@ End Function
         </Field>
         <Field Name="DlvCity">
           <DataField>DlvCity</DataField>
+        </Field>
+        <Field Name="ShipContact">
+          <DataField>ShipContact</DataField>
         </Field>
         <Field Name="TotalAmt_CurrTotalBuff">
           <DataField>TotalAmt_CurrTotalBuff</DataField>

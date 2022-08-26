@@ -177,6 +177,10 @@ report 50031 "SalesOrder_Card_ITB"
                 {
                     //IncludeCaption = true;
                 }
+                column(ShipContact; salesheader."ship-to contact")
+                {
+                    //IncludeCaption = true;
+                }
 
                 trigger OnAfterGetRecord()
                 begin

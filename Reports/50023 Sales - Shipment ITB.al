@@ -842,6 +842,10 @@ report 50023 "Sales - Shipment ITB"
                             IF NOT MoreLines THEN
                                 CurrReport.BREAK;
                             SETRANGE("Line No.", 0, "Line No.");
+                            PallerIalt := 0;  //220822
+                            KartonerIalt := 0;  //220822
+                            TotalNetWeight := 0;  //220822
+                            TotalGrossWeight := 0; //220822                            
                         end;
                     }
                     dataitem(WorkDescriptionLines; Integer)
